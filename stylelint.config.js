@@ -8,5 +8,6 @@ module.exports = {
         indentation: 4, // 缩进
         'selector-list-comma-newline-after': null,
         'no-duplicate-selectors': null,
+        'no-descending-specificity': null,
     },
 }

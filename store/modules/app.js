@@ -1,5 +1,5 @@
 const state = {
-    isMobile: 1,
+    isMobile: 0,
 }
 
 const mutations = {
