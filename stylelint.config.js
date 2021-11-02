@@ -6,5 +6,7 @@ module.exports = {
     // https://stylelint.io/user-guide/configuration
     rules: {
         indentation: 4, // 缩进
+        'selector-list-comma-newline-after': null,
+        'no-duplicate-selectors': null,
     },
 }
