@@ -16,5 +16,6 @@
     "vetur.format.defaultFormatter.html": "none",
     "vetur.format.defaultFormatter.js": "none",
     "vetur.format.options.tabSize": 4,
+    "stylelint.autoFixOnSave": true,
     // eslint相关结束 end------
 }

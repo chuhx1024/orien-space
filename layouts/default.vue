@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <ori-header />
-    <nuxt />
-    <ori-footer />
-  </div>
+    <div>
+        <ori-header />
+        <nuxt />
+        <ori-footer />
+    </div>
 </template>
 <script>
 import OriHeader from './components/OriHeader.vue'
 import OriFooter from './components/OriFooter.vue'
 export default {
-  components: { OriHeader, OriFooter }
+    components: { OriHeader, OriFooter },
 }
 </script>

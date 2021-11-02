@@ -1,19 +1,25 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
-  },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-  ],
-  // add your custom rules here
-  rules: {}
+    root: true,
+    env: {
+        browser: true,
+        node: true,
+    },
+    parserOptions: {
+        parser: '@babel/eslint-parser',
+        requireConfigFile: false,
+    },
+    extends: [
+        '@nuxtjs',
+        'plugin:nuxt/recommended',
+    ],
+    plugins: [
+    ],
+    // add your custom rules here
+    rules: {
+        indent: [2, 4], // js 4个空格缩进
+        'vue/html-indent': [2, 4], // html 4个空格缩进
+        eqeqeq: 0, // 允许使用 == !=
+        'comma-dangle': [2, 'always-multiline'], // 对象 数据 分行显示的 结尾必须加 ','
+        'quote-props': 0,
+    },
 }

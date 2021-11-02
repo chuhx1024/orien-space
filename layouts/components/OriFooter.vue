@@ -1,18 +1,18 @@
 <template>
-  <div class="OriFooter-container">
-    OriFooter
-  </div>
+    <div class="OriFooter-container">
+        OriFooter
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'OriFooter'
+    name: 'OriFooter',
 
 }
 </script>
 
 <style lang="scss" scoped>
-  .OriFooter-container {
-    color: pink;
-  }
+    .OriFooter-container {
+        color: pink;
+    }
 </style>
