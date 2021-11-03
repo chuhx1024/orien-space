@@ -6,6 +6,8 @@ import {
     Menu,
     Submenu,
     MenuItem,
+    Row,
+    Col,
 } from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
 
@@ -15,6 +17,8 @@ const components = [
     Menu,
     Submenu,
     MenuItem,
+    Row,
+    Col,
 ]
 
 const Element = {
