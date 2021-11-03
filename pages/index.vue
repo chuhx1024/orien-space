@@ -1,19 +1,18 @@
 <template>
     <section>
-        <!-- <Tutorial /> -->
+        <banner-com />
         <el-button type="primary" @click="setIsMobile(0)">
             ann
         </el-button>
         <el-button type="primary" @click="setIsMobile(1)">
             ann
         </el-button>
-        <el-input placeholder="请输入内容" />
         {{ isMobile }}
         {{ isMobile }}
-        <el-button type="primary" @click="setIsMobile(0)">
+        <el-button type="primary" @click="setIsMobile(true)">
             ann
         </el-button>
-        <el-button type="primary" @click="setIsMobile(1)">
+        <el-button type="primary" @click="setIsMobile(false)">
             ann
         </el-button>
     </section>
@@ -21,7 +20,9 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import BannerCom from '../components/BannerCom.vue'
 export default {
+    components: { BannerCom },
     computed: {
         ...mapState('app', ['isMobile']),
     },

@@ -5,9 +5,8 @@
                 <header class="clu-header-container type-page">
                     <h1 class="logo" @click="toHomePage">
                         <svg class="icon logo-img" aria-hidden="true">
-                            <use xlink:href="#Clustar-xingyunlogo" />
+                            <use xlink:href="#Orien-xingyunlogo" />
                         </svg>
-                        按钮
                     </h1>
                     <el-collapse-transition>
                         <template v-if="showMenu">
@@ -15,8 +14,8 @@
                                 <el-menu
                                     id="elMenu"
                                     ref="myMenu"
-                                    background-color="#FFF"
-                                    text-color="#1D2023"
+                                    background-color="transparent"
+                                    text-color="#fff"
                                     active-text-color="#0F5FF4"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
@@ -24,13 +23,22 @@
                                     @select="selectHandle"
                                 >
                                     <el-menu-item index="ourHome">
-                                        <a ref="ourHome" class="nav-item">123</a>
+                                        <a class="nav-item">首页</a>
                                     </el-menu-item>
                                     <el-menu-item index="ourHome">
-                                        <a ref="ourHome" class="nav-item">123</a>
+                                        <a ref="ourHome" class="nav-item">服务</a>
                                     </el-menu-item>
                                     <el-menu-item index="ourHome">
-                                        <a ref="ourHome" class="nav-item">123</a>
+                                        <a class="nav-item">产品</a>
+                                    </el-menu-item>
+                                    <el-menu-item index="ourHome">
+                                        <a class="nav-item">新闻动态</a>
+                                    </el-menu-item>
+                                    <el-menu-item index="ourHome">
+                                        <a class="nav-item">加入我们</a>
+                                    </el-menu-item>
+                                    <el-menu-item index="ourHome">
+                                        <a class="nav-item">关于我们</a>
                                     </el-menu-item>
                                 </el-menu>
                             </section>
@@ -39,9 +47,8 @@
                     <template v-if="isMobile">
                         <div class="menu-icon" @click.stop="showMenuHandle">
                             <svg class="icon menu-icon-svg" aria-hidden="true">
-                                <use xlink:href="#Clustar-icon_threeline_fill" />
+                                <use xlink:href="#Orien-icon_threeline_fill" />
                             </svg>
-                            按钮
                         </div>
                     </template>
                 </header>
@@ -166,6 +173,7 @@ export default {
 .clu-header {
     /deep/.el-menu.el-menu--horizontal {
         border-bottom: none;
+        background-color: transparent;
     }
 
     /deep/.el-menu-item {
@@ -230,7 +238,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.11);
     width: 100%;
     height: 66px;
