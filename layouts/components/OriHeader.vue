@@ -23,22 +23,34 @@
                                     @select="selectHandle"
                                 >
                                     <el-menu-item index="ourHome">
-                                        <a class="nav-item">首页</a>
+                                        <nuxt-link class="nav-item" to="/">
+                                            首页
+                                        </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourHome">
-                                        <a ref="ourHome" class="nav-item">服务</a>
+                                    <el-menu-item index="0">
+                                        <nuxt-link class="nav-item" to="productPage">
+                                            服务
+                                        </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourHome">
-                                        <a class="nav-item">产品</a>
+                                    <el-menu-item index="ourProducts">
+                                        <nuxt-link class="nav-item" to="productPage">
+                                            产品
+                                        </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourHome">
-                                        <a class="nav-item">新闻动态</a>
+                                    <el-menu-item index="1">
+                                        <nuxt-link class="nav-item" to="productPage">
+                                            新闻动态
+                                        </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourHome">
-                                        <a class="nav-item">加入我们</a>
+                                    <el-menu-item index="2">
+                                        <nuxt-link class="nav-item" to="productPage">
+                                            加入我们
+                                        </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourHome">
-                                        <a class="nav-item">关于我们</a>
+                                    <el-menu-item index="2">
+                                        <nuxt-link class="nav-item" to="productPage">
+                                            关于我们
+                                        </nuxt-link>
                                     </el-menu-item>
                                 </el-menu>
                             </section>
@@ -280,6 +292,7 @@ export default {
         .nav-item {
             display: inline-block;
             height: 100%;
+            width: 100%;
             line-height: 63px;
         }
     }

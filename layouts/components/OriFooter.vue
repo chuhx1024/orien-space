@@ -61,7 +61,7 @@
                             <el-col class="group-grid" :span="24">
                                 <div>太空探索</div>
                                 <div>太空探索</div>
-                                <div>太空探索</div>
+                                <div>太空探</div>
                                 <div>太空探索</div>
                             </el-col>
                         </el-row>
@@ -91,8 +91,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .OriFooter {
-    background-color: #292b2e;
-    color: pink;
+    background-color: #000;
+    color: #c9caca;
     font-weight: 200;
 
     .OriFooter-contant {
@@ -118,7 +118,6 @@ export default {
         .content-item {
             .item-title {
                 font-size: 14px;
-                color: #f0f5ff;
             }
 
             .item-group {
