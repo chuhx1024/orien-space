@@ -1,10 +1,9 @@
 <template>
-    <section class="home-page-container">
+    <section class="join-page-container">
         <banner-com
-            url-source="/img/index/index_0.png"
-            main-title="东方空间完成4亿天使轮系列融资"
+            url-source="/img/news/news_banner.png"
+            main-title="加入我们"
             banner-desc="东方空间完成4亿天使轮系列融资"
-            banner-btn="了解更多"
         />
     </section>
 </template>
@@ -13,7 +12,7 @@
 import { mapState, mapActions } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
 export default {
-    name: 'HomePage',
+    name: 'JoinPage',
     components: { BannerCom },
     computed: {
         ...mapState('app', ['isMobile']),
@@ -24,7 +23,7 @@ export default {
 }
 </script>
 <style lang='scss' scoped>
-    .home-page-container {
+    .join-page-container {
         color: pink;
     }
 

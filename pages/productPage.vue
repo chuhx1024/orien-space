@@ -1,6 +1,10 @@
 <template>
     <div class="productPage-container">
-        <banner-com />
+        <banner-com
+            url-source="/img/index/index_0.png"
+            main-title="产品"
+            banner-desc="&quot;引力&quot;系列运载火箭"
+        />
         <ProductItem id="numberFirst" />
         <ProductItem id="numberSecond" />
         <ProductItem id="numberThird" />

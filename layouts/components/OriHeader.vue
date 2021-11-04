@@ -28,7 +28,7 @@
                                         </nuxt-link>
                                     </el-menu-item>
                                     <el-menu-item index="0">
-                                        <nuxt-link class="nav-item" to="productPage">
+                                        <nuxt-link class="nav-item" to="servicePage">
                                             服务
                                         </nuxt-link>
                                     </el-menu-item>
@@ -38,17 +38,17 @@
                                         </nuxt-link>
                                     </el-menu-item>
                                     <el-menu-item index="1">
-                                        <nuxt-link class="nav-item" to="productPage">
+                                        <nuxt-link class="nav-item" to="newsPage">
                                             新闻动态
                                         </nuxt-link>
                                     </el-menu-item>
                                     <el-menu-item index="2">
-                                        <nuxt-link class="nav-item" to="productPage">
+                                        <nuxt-link class="nav-item" to="joinPage">
                                             加入我们
                                         </nuxt-link>
                                     </el-menu-item>
                                     <el-menu-item index="2">
-                                        <nuxt-link class="nav-item" to="productPage">
+                                        <nuxt-link class="nav-item" to="aboutPage">
                                             关于我们
                                         </nuxt-link>
                                     </el-menu-item>

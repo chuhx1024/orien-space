@@ -1,16 +1,16 @@
 <template>
     <div class="BannerCom-container">
-        <img class="wallpaper" src="/img/index/index_0.png" alt="">
+        <img class="wallpaper" :src="urlSource" alt="">
         <section class="banner-wallpaper">
-            <h2 class="main-title">
-                东方通信
+            <h2 v-if="mainTitle" class="main-title">
+                {{ mainTitle }}
             </h2>
-            <p class="banner-desc">
-                东方公司说东方公司说东方公司说东方公司说东方公司说东方公司说
+            <p v-if="bannerDesc" class="banner-desc">
+                {{ bannerDesc }}
             </p>
-            <div class="banner-btn">
-                <el-button>
-                    按钮按钮
+            <div v-if="bannerBtn" class="banner-btn">
+                <el-button type="primary">
+                    {{ bannerBtn }}
                 </el-button>
             </div>
         </section>
@@ -20,13 +20,31 @@
 <script>
 export default {
     name: 'BannerCom',
+    props: {
+        urlSource: {
+            type: String,
+            default: '',
+        },
+        mainTitle: {
+            type: String,
+            default: '',
+        },
+        bannerDesc: {
+            type: String,
+            default: '',
+        },
+        bannerBtn: {
+            type: String,
+            default: '',
+        },
+
+    },
 
 }
 </script>
 
 <style lang='scss' scoped>
     .BannerCom-container {
-        color: pink;
         position: relative;
 
         .wallpaper {
@@ -46,8 +64,19 @@ export default {
             justify-content: center;
             text-align: center;
 
+            .main-title {
+                color: #fff;
+                font-size: 55px;
+            }
+
+            .banner-desc {
+                margin-top: 60px;
+                font-size: 38px;
+                font-weight: 100;
+            }
+
             .banner-btn {
-                margin-top: 300px;
+                margin-top: 245px;
             }
         }
     }

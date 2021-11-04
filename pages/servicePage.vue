@@ -1,7 +1,7 @@
 <template>
-    <section class="home-page-container">
+    <section class="service-page-container">
         <banner-com
-            url-source="/img/index/index_0.png"
+            url-source="/img/news/news_banner.png"
             main-title="东方空间完成4亿天使轮系列融资"
             banner-desc="东方空间完成4亿天使轮系列融资"
             banner-btn="了解更多"
@@ -13,7 +13,7 @@
 import { mapState, mapActions } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
 export default {
-    name: 'HomePage',
+    name: 'ServicePage',
     components: { BannerCom },
     computed: {
         ...mapState('app', ['isMobile']),
@@ -24,7 +24,7 @@ export default {
 }
 </script>
 <style lang='scss' scoped>
-    .home-page-container {
+    .service-page-container {
         color: pink;
     }
 
