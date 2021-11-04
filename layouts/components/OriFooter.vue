@@ -4,7 +4,7 @@
             <el-row :type="isMobile ? '' : 'flex'" justify="space-between">
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
+                        <h3 class="item-title" @click="goToNext('/')">
                             首页
                         </h3>
                     </div>
@@ -26,7 +26,7 @@
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
+                        <h3 class="item-title" @click="goToNext('productPage')">
                             产品
                         </h3>
                         <el-row class="item-group">
@@ -166,6 +166,7 @@ export default {
 
             .item-title {
                 font-size: 14px;
+                cursor: pointer;
             }
 
             .item-group {
