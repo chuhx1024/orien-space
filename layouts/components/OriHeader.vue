@@ -14,7 +14,7 @@
                                 <el-menu
                                     id="elMenu"
                                     ref="myMenu"
-                                    background-color="transparent"
+                                    :background-color="isMobile ? '#000' : 'transparent'"
                                     text-color="#fff"
                                     active-text-color="#0F5FF4"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
@@ -200,7 +200,7 @@ export default {
 
         &:hover {
             border-bottom: none;
-            color: red !important;
+            color: blue !important;
         }
     }
 
@@ -226,15 +226,15 @@ export default {
     /deep/.el-submenu .el-submenu__title:hover {
         border-bottom: none;
         background-color: transparent !important;
-        color: red !important;
+        color: blue !important;
 
         i {
-            color: red;
+            color: blue;
         }
     }
 
     /deep/.el-button {
-        background-color: red;
+        background-color: blue;
         color: #fff;
     }
 
@@ -270,7 +270,7 @@ export default {
             cursor: pointer;
 
             .logo-img {
-                color: red;
+                color: blue;
                 width: 215px;
                 height: 28px;
             }
@@ -285,7 +285,7 @@ export default {
 
             .menu-icon-svg {
                 font-size: 30px;
-                color: red;
+                color: blue;
             }
         }
 
@@ -322,12 +322,12 @@ export default {
         }
 
         /deep/.el-submenu .el-submenu__title:hover {
-            border-bottom: red solid 2px !important;
+            border-bottom: blue solid 2px !important;
             background-color: transparent !important;
-            color: red !important;
+            color: blue !important;
 
             i {
-                color: red;
+                color: blue;
             }
         }
 
@@ -336,9 +336,9 @@ export default {
             -webkit-tap-highlight-color: transparent;
 
             &:hover {
-                border-bottom: red solid 2px !important;
+                border-bottom: blue solid 2px !important;
                 background-color: transparent !important;
-                color: red !important;
+                color: blue !important;
             }
         }
 
