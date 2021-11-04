@@ -8,7 +8,6 @@ import {
     MenuItem,
     Row,
     Col,
-    Image,
 } from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
 
@@ -20,7 +19,6 @@ const components = [
     MenuItem,
     Row,
     Col,
-    Image,
 ]
 
 const Element = {

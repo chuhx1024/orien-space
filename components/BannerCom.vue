@@ -1,10 +1,10 @@
 <template>
     <div class="BannerCom-container">
-        <el-image class="wallpaper" src="/img/index/index_0.png" lazy alt="" />
-        <el-image class="wallpaper" src="/img/index/index_1.png" lazy alt="" />
-        <el-image class="wallpaper" src="/img/index/index_2.png" lazy alt="" />
-        <el-image class="wallpaper" src="/img/index/index_3.png" lazy alt="" />
-        <el-image class="wallpaper" src="/img/index/index_4.png" lazy alt="" />
+        <img class="wallpaper" src="/img/index/index_0.png" alt="">
+        <img class="wallpaper" src="/img/index/index_1.png" alt="">
+        <img class="wallpaper" src="/img/index/index_2.png" alt="">
+        <img class="wallpaper" src="/img/index/index_3.png" alt="">
+        <img class="wallpaper" src="/img/index/index_4.png" alt="">
     </div>
 </template>
 
