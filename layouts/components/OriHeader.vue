@@ -5,7 +5,7 @@
                 <header class="clu-header-container type-page">
                     <h1 class="logo" @click="toHomePage">
                         <svg class="icon logo-img" aria-hidden="true">
-                            <use xlink:href="#Orien-xingyunlogo" />
+                            <use xlink:href="#Orien-LOGO" />
                         </svg>
                     </h1>
                     <el-collapse-transition>
@@ -16,7 +16,7 @@
                                     ref="myMenu"
                                     :background-color="isMobile ? '#000' : 'transparent'"
                                     text-color="#fff"
-                                    active-text-color="pink"
+                                    active-text-color="#009dda"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
                                     :unique-opened="true"
@@ -148,12 +148,14 @@ export default {
             Node.forEach((item, index) => {
                 if (index !== 0) {
                     item.style.borderBottomColor = 'transparent'
-                    item.style.color = '#1e2d55'
+                    item.style.color = '#FFF'
+                } else {
+                    item.style.color = '#009dda'
                 }
             })
             Node2.forEach((item) => {
                 item.style.borderBottomColor = 'transparent'
-                item.style.color = '#1e2d55'
+                item.style.color = '#009dda'
             })
             const url = this.getUrl()
             if (url === '/' || url === '/en/' || url === 'zh') {
@@ -162,7 +164,7 @@ export default {
                     behavior: 'smooth',
                 })
             } else {
-                this.$router.push(this.$i18n.path(''))
+                this.$router.push('/')
             }
         },
         checkClick () {

@@ -1,7 +1,7 @@
 <template>
     <section class="about-page-container">
         <banner-com
-            url-source="/img/news/news_banner.png"
+            url-source="/img/about/about_banner.jpg"
             main-title="关于我们"
         />
     </section>

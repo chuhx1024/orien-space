@@ -1,7 +1,7 @@
 <template>
     <div class="productPage-container">
         <banner-com
-            url-source="/img/index/index_0.png"
+            url-source="/img/index/index_0.jpg"
             main-title="产品"
             banner-desc="&quot;引力&quot;系列运载火箭"
         />

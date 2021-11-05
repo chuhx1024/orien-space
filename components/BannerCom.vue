@@ -5,9 +5,9 @@
             <h2 v-if="mainTitle" class="main-title">
                 {{ mainTitle }}
             </h2>
-            <p v-if="bannerDesc" class="banner-desc">
-                {{ bannerDesc }}
-            </p>
+            <div class="banner-desc">
+                <slot />
+            </div>
             <div v-if="bannerBtn" class="banner-btn">
                 <el-button type="primary">
                     {{ bannerBtn }}
@@ -26,10 +26,6 @@ export default {
             default: '',
         },
         mainTitle: {
-            type: String,
-            default: '',
-        },
-        bannerDesc: {
             type: String,
             default: '',
         },
@@ -62,17 +58,36 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center;
 
             .main-title {
                 color: #fff;
                 font-size: 55px;
+                line-height: 55px;
             }
 
             .banner-desc {
-                margin-top: 60px;
-                font-size: 38px;
-                font-weight: 100;
+                .small {
+                    font-size: 14px;
+                    font-weight: 100;
+                    color: #fff;
+                }
+
+                .small:nth-child(1) {
+                    padding-top: 26px;
+                }
+
+                .big {
+                    font-size: 38px;
+                    font-weight: 100;
+                    color: #9fa7b4;
+                    padding-top: 25px;
+                }
+
+                .big:nth-child(1) {
+                    padding-top: 50px;
+                }
             }
 
             .banner-btn {
