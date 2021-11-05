@@ -38,7 +38,13 @@ export default {
         '@nuxtjs/eslint-module',
         // https://go.nuxtjs.dev/stylelint
         '@nuxtjs/stylelint-module',
+        '@nuxtjs/style-resources',
     ],
+    styleResources: {
+        scss: [
+            './assets/css/variables.scss', // 自己项目中的样式文件的路径
+        ],
+    },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [

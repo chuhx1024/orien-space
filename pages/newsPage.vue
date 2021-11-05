@@ -59,11 +59,19 @@ import BannerCom from '../components/BannerCom.vue'
 export default {
     name: 'NewsPage',
     components: { BannerCom },
+    data () {
+        return {
+            activeName: 0,
+        }
+    },
     computed: {
         ...mapState('app', ['isMobile']),
     },
     methods: {
         ...mapActions('app', ['setIsMobile']),
+        handleClick () {
+
+        },
     },
 }
 </script>
@@ -76,6 +84,18 @@ export default {
         .news-nav {
             /deep/.el-tabs__nav-wrap::after {
                 background-color: #000;
+            }
+
+            /deep/.el-tabs__item {
+                color: #fff;
+
+                &:hover {
+                    color: $--color-primary;
+                }
+            }
+
+            /deep/.el-tabs__item.is-active {
+                color: $--color-primary;
             }
         }
 

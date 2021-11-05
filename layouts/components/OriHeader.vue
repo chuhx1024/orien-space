@@ -16,7 +16,7 @@
                                     ref="myMenu"
                                     :background-color="isMobile ? '#000' : 'transparent'"
                                     text-color="#fff"
-                                    active-text-color="#0F5FF4"
+                                    active-text-color="pink"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
                                     :unique-opened="true"
@@ -200,7 +200,7 @@ export default {
 
         &:hover {
             border-bottom: none;
-            color: blue !important;
+            color: $--color-primary !important;
         }
     }
 
@@ -226,15 +226,15 @@ export default {
     /deep/.el-submenu .el-submenu__title:hover {
         border-bottom: none;
         background-color: transparent !important;
-        color: blue !important;
+        color: $--color-primary !important;
 
         i {
-            color: blue;
+            color: $--color-primary;
         }
     }
 
     /deep/.el-button {
-        background-color: blue;
+        background-color: $--color-primary;
         color: #fff;
     }
 
@@ -270,7 +270,7 @@ export default {
             cursor: pointer;
 
             .logo-img {
-                color: blue;
+                color: $--color-primary;
                 width: 215px;
                 height: 28px;
             }
@@ -285,7 +285,7 @@ export default {
 
             .menu-icon-svg {
                 font-size: 30px;
-                color: blue;
+                color: $--color-primary;
             }
         }
 
@@ -322,12 +322,12 @@ export default {
         }
 
         /deep/.el-submenu .el-submenu__title:hover {
-            border-bottom: blue solid 2px !important;
+            border-bottom: $--color-primary solid 2px !important;
             background-color: transparent !important;
-            color: blue !important;
+            color: $--color-primary !important;
 
             i {
-                color: blue;
+                color: $--color-primary;
             }
         }
 
@@ -336,9 +336,9 @@ export default {
             -webkit-tap-highlight-color: transparent;
 
             &:hover {
-                border-bottom: blue solid 2px !important;
+                border-bottom: $--color-primary solid 2px !important;
                 background-color: transparent !important;
-                color: blue !important;
+                color: $--color-primary !important;
             }
         }
 
