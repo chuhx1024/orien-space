@@ -8,8 +8,11 @@ import {
     MenuItem,
     Row,
     Col,
+    Tabs,
+    TabPane,
 } from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
+import '../assets/css/cover-ele.scss'
 
 const components = [
     Button,
@@ -19,6 +22,8 @@ const components = [
     MenuItem,
     Row,
     Col,
+    Tabs,
+    TabPane,
 ]
 
 const Element = {
