@@ -93,6 +93,7 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import { goToHash } from '@/utiles/tool.js'
 export default {
     data () {
         return {
@@ -107,23 +108,7 @@ export default {
             this.$router.push(path)
         },
         goToHash (path, hash) {
-            if (path !== window.location.pathname.slice(1)) {
-                this.$router.push(path, () => {
-                    setTimeout(() => {
-                        window.scroll({
-                            top: document.getElementById(hash).offsetTop - 66,
-                            behavior: 'smooth',
-                        })
-                    }, 100)
-                })
-            } else {
-                setTimeout(() => {
-                    window.scroll({
-                        top: document.getElementById(hash).offsetTop - 66,
-                        behavior: 'smooth',
-                    })
-                }, 100)
-            }
+            goToHash.call(this, path, hash)
         },
     },
 
@@ -214,6 +199,7 @@ export default {
         .content-item {
             padding-left: 30px;
             padding-bottom: 10px;
+            padding-top: 0;
 
             .item-title {
                 line-height: 60px;
