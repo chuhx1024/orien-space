@@ -76,19 +76,37 @@
                 <el-col style="order: -1;" :xs="24" :sm="24" :md="13" :lg="13" :xl="13">
                     <div class="content-logo">
                         <svg class="icon content-logo-icon" aria-hidden="true">
-                            <use xlink:href="#Orien-xingyunlogo" />
+                            <use xlink:href="#Orien-LOGO" />
                         </svg>
-                        <el-row class="log-item-group">
-                            <el-col class="group-grid" :span="24">
-                                <div>商务合作 ：SERVICE@ORIENSP</div>
-                                <div>媒体合作 ：PR@ORIENSPACE.C</div>
-                                <div>加入我们 ：HR@ORIENSPACE.C</div>
-                            </el-col>
-                        </el-row>
+                        <div class="contact-group">
+                            <div class="contact-group-item">
+                                商务合作 ：SERVICE@ORIENSP
+                            </div>
+                            <di class="contact-group-item">
+                                媒体合作 ：PR@ORIENSPACE.C
+                            </di>
+                            <div class="contact-group-item">
+                                加入我们 ：HR@ORIENSPACE.C
+                            </div>
+                        </div>
+                        <div class="QR-group">
+                            <img class="QR-code" src="/img/QR_code.jpg" alt="">
+                            <div>
+                                <p class="code-title">
+                                    Breaker of commercial space
+                                </p>
+                                <p class="code-text">
+                                    扫码关注我们，了解更多
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </el-col>
             </el-row>
         </div>
+        </el-col>
+        </el-row>
+    </div>
     </div>
 </template>
 <script>
@@ -133,16 +151,44 @@ export default {
             // top: 10px;
 
             .content-logo-icon {
-                width: 215px;
+                transform: scale(1.5) translateX(14px);
                 height: 28px;
                 color: #fff;
-                font-size: 17px;
+                font-size: 90px;
                 line-height: 28px;
             }
 
-            .log-item-group {
-                padding-top: 19px;
-                font-size: 14px;
+            .contact-group {
+                padding-top: 30px;
+                font-size: 15px;
+                color: #c9caca;
+                line-height: 20px;
+            }
+
+            .QR-group {
+                padding-top: 18px;
+                display: flex;
+                align-items: flex-end;
+
+                .QR-code {
+                    width: 74px;
+                    height: 74px;
+                    margin-right: 8px;
+                }
+
+                .code-title {
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: #f49e17;
+                    line-height: 18px;
+                }
+
+                .code-text {
+                    padding-top: 8px;
+                    font-size: 10px;
+                    color: #c9caca;
+                    line-height: 13px;
+                }
             }
         }
 
@@ -202,7 +248,7 @@ export default {
             padding-top: 0;
 
             .item-title {
-                line-height: 60px;
+                line-height: 25px;
             }
 
             .groups-grid {

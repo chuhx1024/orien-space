@@ -11,6 +11,8 @@ import {
     Tabs,
     TabPane,
 } from 'element-ui'
+
+import CollapseTransition from 'element-ui/lib/transitions/collapse-transition'
 import locale from 'element-ui/lib/locale/lang/en'
 import '../assets/css/cover-ele.scss'
 
@@ -24,6 +26,7 @@ const components = [
     Col,
     Tabs,
     TabPane,
+    CollapseTransition,
 ]
 
 const Element = {

@@ -272,9 +272,9 @@ export default {
             cursor: pointer;
 
             .logo-img {
-                color: $--color-primary;
-                width: 215px;
+                transform: scale(1.5) translateX(14px);
                 height: 28px;
+                font-size: 90px;
             }
         }
 
@@ -363,7 +363,7 @@ export default {
         .clu-header-container {
             .logo {
                 .logo-img {
-                    width: 150px;
+                    width: 80px;
                     height: 28px;
                     transform: scale(1.4);
                     padding-left: 15px;
