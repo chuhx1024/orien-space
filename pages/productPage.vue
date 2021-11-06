@@ -90,9 +90,6 @@
             class="prower-container"
         >
             <el-row class="type-page" :type="isMobile ? '' : 'flex'" justify="space-between">
-                <el-col style="order: 1;" class="right-content" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                    <img class="right-content-img" :src="`/img/product/number_${index}.png`" alt="">
-                </el-col>
                 <el-col class="left-content" :xs="24" :sm="24" :md="10" :lg="10" :xl="10">
                     <div class="power-title">
                         <svg class="icon" aria-hidden="true">
@@ -125,6 +122,9 @@
                             预约观看
                         </el-button>
                     </div>
+                </el-col>
+                <el-col class="right-content" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                    <img class="right-content-img" :src="`/img/product/number_${index}.png`" alt="">
                 </el-col>
             </el-row>
         </div>
@@ -264,6 +264,7 @@ export default {
 
             .power-desc-item {
                 height: 48px;
+                font-size: 13px;
                 line-height: 48px;
                 border-bottom: 1px solid rgba(201, 202, 202, 0.39);
             }
