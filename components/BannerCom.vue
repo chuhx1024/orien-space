@@ -42,6 +42,7 @@ export default {
 <style lang='scss' scoped>
     .BannerCom-container {
         position: relative;
+        line-height: 1;
 
         .wallpaper {
             width: 100%;
@@ -63,13 +64,14 @@ export default {
 
             .main-title {
                 color: #fff;
-                font-size: 55px;
-                line-height: 55px;
+                font-size: 4.7rem;
+                line-height: 4.7rem;
             }
 
             .banner-desc {
                 .small {
-                    font-size: 14px;
+                    font-size: 12px;
+                    line-height: 17px;
                     font-weight: 100;
                     color: #fff;
                 }
@@ -79,19 +81,25 @@ export default {
                 }
 
                 .big {
-                    font-size: 38px;
+                    font-size: 3rem;
                     font-weight: 100;
                     color: #9fa7b4;
-                    padding-top: 25px;
+                    padding-top: 1.5rem;
                 }
 
                 .big:nth-child(1) {
-                    padding-top: 50px;
+                    padding-top: 4rem;
                 }
             }
 
             .banner-btn {
-                margin-top: 245px;
+                width: 13rem;
+                margin-top: 13.5rem;
+
+                /deep/.el-button {
+                    width: 100%;
+                    font-size: 1.5rem;
+                }
             }
         }
     }

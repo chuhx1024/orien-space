@@ -20,6 +20,7 @@ export default {
     methods: {
         $_isMobile () {
             const rect = document.body.getBoundingClientRect()
+            document.documentElement.style.fontSize = (rect.width / 120) + 'px'
             return rect.width - 1 < WIDTH
         },
         $_isSmallScreen () {

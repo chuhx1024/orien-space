@@ -2,9 +2,7 @@
     <section class="service-page-container">
         <banner-com
             url-source="/img/news/news_banner.png"
-            main-title="东方空间完成4亿天使轮系列融资"
-            banner-desc="东方空间完成4亿天使轮系列融资"
-            banner-btn="了解更多"
+            main-title="服务"
         />
     </section>
 </template>
