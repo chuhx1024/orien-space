@@ -1,6 +1,6 @@
 
 <template>
-    <section class="newsPage-container">
+    <section class="newsPage-container" :class="{isMobile: isMobile}">
         <banner-com
             url-source="/img/news/news_banner.png"
             main-title="新闻"
@@ -80,6 +80,7 @@ export default {
     .news-content {
         background-color: #000;
         color: #fff;
+        overflow: hidden;
 
         .news-nav {
             /deep/.el-tabs__nav-wrap::after {
