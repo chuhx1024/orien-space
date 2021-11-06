@@ -90,7 +90,9 @@
                             </div>
                         </div>
                         <div class="QR-group">
-                            <img class="QR-code" src="/img/QR_code.jpg" alt="">
+                            <svg class="icon QR-code" aria-hidden="true">
+                                <use xlink:href="#Orien-erweima" />
+                            </svg>
                             <div>
                                 <p class="code-title">
                                     Breaker of commercial space

@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
 import { goToHash } from '@/utiles/tool.js'
 export default {
@@ -51,7 +51,6 @@ export default {
         ...mapState('app', ['isMobile']),
     },
     methods: {
-        ...mapActions('app', ['setIsMobile']),
         goToHash (path, hash) {
             goToHash.call(this, path, hash)
         },
