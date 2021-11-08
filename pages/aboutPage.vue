@@ -4,9 +4,9 @@
             url-source="/img/about/about_banner.jpg"
             main-title="关于我们"
         />
-        <div class="about-desc">
-            <el-row class="type-page" type="flex">
-                <el-col class="left-content" :span="15">
+        <div class="about-desc" :class="{isMobile: isMobile}">
+            <el-row class="type-page" type="flex" style="flex-wrap: wrap;">
+                <el-col class="left-content" :xs="24" :sm="24" :md="15" :lg="15" :xl="15">
                     <div>
                         <p class="left-text">
                             东方空间由资深航天技术团队与成功科技创业者联合创办，旨在帮助人类拓展发展空间，让更多人享受太空新文明，有效补充全球航天发射能力。
@@ -17,20 +17,20 @@
                         </p>
                     </div>
                 </el-col>
-                <el-col :span="9">
+                <el-col v-if="!isMobile" :xs="24" :sm="24" :md="9" :lg="9" :xl="9">
                     <img class="right-content-img" src="/img/about/about_desc.jpg" alt="">
                 </el-col>
             </el-row>
         </div>
-        <div class="about-market">
+        <div class="about-market" :class="{isMobile: isMobile}">
             <div class="market-title">
                 市场结构
             </div>
-            <el-row class="type-page market-content" type="flex">
-                <el-col :span="12">
+            <el-row class="type-page market-content" type="flex" style="flex-wrap: wrap;">
+                <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <img class="left-content-img" src="/img/about/about_map.png" alt="">
                 </el-col>
-                <el-col class="left-content-text" :span="12">
+                <el-col class="left-content-text" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <div class="text-group">
                         <h3 class="text-title">
                             北京总部
@@ -83,18 +83,18 @@
                 </el-tab-pane>
             </el-tabs>
         </div>
-        <div class="about-honour">
+        <div class="about-honour" :class="{isMobile: isMobile}">
             <div class="honour-title">
                 荣誉资质
             </div>
         </div>
-        <div class="about-partners">
+        <div class="about-partners" :class="{isMobile: isMobile}">
             <div class="partners-title">
                 投资者关系
             </div>
             <div class="partners-content">
                 <div class="partners-img type-page">
-                    <el-row type="flex" align="middle">
+                    <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
                         <el-col v-for="item in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4">
                             <img class="content-item" :src="`/img/about/${item}`" alt="">
                         </el-col>
@@ -110,6 +110,32 @@
                     </el-row>
                 </div>
             </div>
+        </div>
+        <div class="about-contact" :class="{isMobile: isMobile}">
+            <div class="contact-title">
+                联系我们
+            </div>
+            <el-row class="type-page contact-content" type="flex" style="flex-wrap: wrap;">
+                <el-col class="left-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+                    <div class="contact-group">
+                        <div class="contact-group-item">
+                            <span>公司地址 ：</span>北京市
+                        </div>
+                        <div class="contact-group-item">
+                            商务合作邮箱 ：SERVICE@ORIENSP
+                        </div>
+                        <di class="contact-group-item">
+                            媒体合作邮箱 ：PR@ORIENSPACE.C
+                        </di>
+                        <div class="contact-group-item">
+                            加入我们 ：HR@ORIENSPACE.C
+                        </div>
+                    </div>
+                </el-col>
+                <el-col class="right-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+                    <img class="content-img" src="/img/about/contact.jpeg" alt="">
+                </el-col>
+            </el-row>
         </div>
     </section>
 </template>
@@ -186,6 +212,12 @@ export default {
         .right-content-img {
             width: 100%;
         }
+
+        &.isMobile {
+            .left-text {
+                font-size: 14px;
+            }
+        }
     }
 
     .about-market {
@@ -221,6 +253,25 @@ export default {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 37px;
+                }
+            }
+        }
+
+        &.isMobile {
+            .market-title {
+                font-size: 33px;
+                padding: 70px 0 50px;
+            }
+
+            .market-content {
+                .left-content-text {
+                    .text-title {
+                        font-size: 18px;
+                    }
+
+                    .text-desc {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -363,14 +414,15 @@ export default {
             font-size: 33px;
             color: #fff;
             line-height: 47px;
-            padding: 70px 0 97px;
+            padding: 70px 0 67px;
         }
 
         .partners-content {
             .partners-img {
                 .content-item {
                     width: 80px;
-                    vertical-align: center;
+                    padding-top: 30px;
+                    transform: translateX(40%);
                 }
             }
 
@@ -380,7 +432,51 @@ export default {
                     font-size: 17px;
                     color: #fff;
                     line-height: 23px;
+                    text-align: center;
                 }
+            }
+        }
+    }
+
+    .about-contact {
+        background-color: #05081a;
+        padding-bottom: 70px;
+
+        .contact-title {
+            text-align: center;
+            font-size: 33px;
+            color: #fff;
+            line-height: 47px;
+            padding: 70px 0 67px;
+        }
+
+        .contact-content {
+            .right-content {
+                .content-img {
+                    width: 100%;
+                }
+            }
+
+            .left-content {
+                display: flex;
+                align-items: center;
+
+                .contact-group {
+                    .contact-group-item {
+                        color: #fff;
+                        font-size: 17px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+
+        &.isMobile {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .left-content {
+                padding-bottom: 40px;
             }
         }
     }
