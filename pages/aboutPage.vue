@@ -87,6 +87,38 @@
             <div class="honour-title">
                 荣誉资质
             </div>
+            <div class="honour-content type-page">
+                <template v-if="isMobile">
+                    <carousel
+                        key="dfasdfasdf"
+                        :nav="false"
+                        :items="2"
+                    >
+                        <div
+                            v-for="(item, index) in honourImgData"
+                            :key="index"
+                            class="carouser-card"
+                        >
+                            <img class :src="`/img/about/${item}`" alt="">
+                        </div>
+                    </carousel>
+                </template>
+                <template v-else>
+                    <carousel
+                        key="12"
+                        :nav="false"
+                        :items="5"
+                    >
+                        <div
+                            v-for="(item, index) in honourImgData"
+                            :key="index"
+                            class="carouser-card"
+                        >
+                            <img class :src="`/img/about/${item}`" alt="">
+                        </div>
+                    </carousel>
+                </template>
+            </div>
         </div>
         <div class="about-partners" :class="{isMobile: isMobile}">
             <div class="partners-title">
@@ -173,6 +205,16 @@ export default {
                     { theTime: '2021.01', theEvent: '由山东宇航技术有限公司正式更名为东方空间技术（山东）有限公司。' },
                 ],
             },
+            ],
+            honourImgData: [
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
+                'honour_0.jpg',
             ],
             partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_2.jpeg', 'partners_4.jpeg', 'partners_5.jpeg'],
             partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
@@ -396,12 +438,35 @@ export default {
     .about-honour {
         background-color: #000;
 
+        /deep/.owl-theme .owl-dots .owl-dot.active span, /deep/.owl-theme .owl-dots .owl-dot:hover span {
+            background: $--color-primary;
+        }
+
+        /deep/.owl-dots {
+            margin-top: 47px;
+        }
+
         .honour-title {
             text-align: center;
             font-size: 33px;
             color: #fff;
             line-height: 47px;
             padding: 70px 0 35px;
+        }
+
+        .honour-content {
+            .carouser-card {
+                margin: 0 auto;
+                width: 92%;
+            }
+        }
+
+        &.isMobile {
+            .honour-content {
+                .carouser-card {
+                    width: 98%;
+                }
+            }
         }
     }
 

@@ -27,6 +27,7 @@ export default {
     plugins: [
         '@/plugins/element-ui',
         { src: '~/plugins/iconfont', ssr: false },
+        { src: '~/plugins/carouse', ssr: false },
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
