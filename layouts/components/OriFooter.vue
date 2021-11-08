@@ -76,7 +76,8 @@
                 <el-col style="order: -1;" :xs="24" :sm="24" :md="13" :lg="13" :xl="13">
                     <div class="content-logo">
                         <svg class="icon content-logo-icon" aria-hidden="true">
-                            <use xlink:href="#Orien-LOGO" />
+                            <!-- <use xlink:href="#Orien-LOGO" /> -->
+                            <use xlink:href="#Orien-xingyunlogo" />
                         </svg>
                         <div class="contact-group">
                             <div class="contact-group-item">

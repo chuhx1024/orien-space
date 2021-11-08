@@ -10,6 +10,8 @@ import {
     Col,
     Tabs,
     TabPane,
+    Timeline,
+    TimelineItem,
 } from 'element-ui'
 
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition'
@@ -27,6 +29,8 @@ const components = [
     Tabs,
     TabPane,
     CollapseTransition,
+    Timeline,
+    TimelineItem,
 ]
 
 const Element = {
