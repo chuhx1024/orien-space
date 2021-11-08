@@ -83,6 +83,34 @@
                 </el-tab-pane>
             </el-tabs>
         </div>
+        <div class="about-honour">
+            <div class="honour-title">
+                荣誉资质
+            </div>
+        </div>
+        <div class="about-partners">
+            <div class="partners-title">
+                投资者关系
+            </div>
+            <div class="partners-content">
+                <div class="partners-img type-page">
+                    <el-row type="flex" align="middle">
+                        <el-col v-for="item in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4">
+                            <img class="content-item" :src="`/img/about/${item}`" alt="">
+                        </el-col>
+                    </el-row>
+                </div>
+                <div class="partners-text type-page">
+                    <el-row>
+                        <el-col v-for="item in partnersText" :key="item" :xs="8" :sm="8" :md="3" :lg="3" :xl="3">
+                            <div class="content-item">
+                                {{ item }}
+                            </div>
+                        </el-col>
+                    </el-row>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -120,6 +148,8 @@ export default {
                 ],
             },
             ],
+            partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_2.jpeg', 'partners_4.jpeg', 'partners_5.jpeg'],
+            partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
         }
     },
     computed: {
@@ -307,6 +337,49 @@ export default {
                     p {
                         line-height: 20px;
                     }
+                }
+            }
+        }
+    }
+
+    .about-honour {
+        background-color: #000;
+
+        .honour-title {
+            text-align: center;
+            font-size: 33px;
+            color: #fff;
+            line-height: 47px;
+            padding: 70px 0 35px;
+        }
+    }
+
+    .about-partners {
+        background-color: #000;
+        padding-bottom: 150px;
+
+        .partners-title {
+            text-align: center;
+            font-size: 33px;
+            color: #fff;
+            line-height: 47px;
+            padding: 70px 0 97px;
+        }
+
+        .partners-content {
+            .partners-img {
+                .content-item {
+                    width: 80px;
+                    vertical-align: center;
+                }
+            }
+
+            .partners-text {
+                .content-item {
+                    padding-top: 45px;
+                    font-size: 17px;
+                    color: #fff;
+                    line-height: 23px;
                 }
             }
         }
