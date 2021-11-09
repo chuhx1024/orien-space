@@ -92,7 +92,7 @@ export default {
         isMobile (val) {
             this.showMenu = !val
             // 切换时移除绑定
-            // $(document).unbind('click', this.checkClick)
+            document.removeEventListener('click', this.checkClick)
         },
     },
 
@@ -105,7 +105,7 @@ export default {
 
         showMenuHandle () {
             this.showMenu = !this.showMenu
-            // $(document).bind('click', this.checkClick)
+            document.addEventListener('click', this.checkClick)
         },
         scroll (t) {
             window.scrollTo({
