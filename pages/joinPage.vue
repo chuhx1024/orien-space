@@ -30,13 +30,28 @@
                         </div>
                     </template>
                     <div class="content-wrap">
-                        <div class="content-title">
+                        <div class="constent-title">
+                            总体设计师
+                        </div>
+                        <div class="content-sub-title">
                             岗位职责
                         </div>
-                        <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
-                        <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
-                        <div class="content-title">
+                        <p>1.负责运载火箭总体方案论证与设计、总体技术指标分解； </p>
+                        <p>2.负责运载火箭各分系统技术方案和指标协调； </p>
+                        <p>3.负责运载火箭总体参数计算、设计与优化； </p>
+                        <p>4.负责运载火箭大型地面试验项目策划，参加大型地面试验； </p>
+                        <p>5.负责运载火箭飞行试验方案协调，编制飞行试验大纲； </p>
+                        <p>6.负责运载火箭与卫星等有效载荷的接口协调，参与发射场和测控系统接口协调； </p>
+                        <p>7.负责国内外相关技术发展现状跟踪和研究； </p>
+                        <p>8.负责相关报告和文件编制。</p>
+                        <div class="content-sub-title">
                             任职要求
+                        </div>
+                        <p>1.飞行器设计、控制系统工程、火箭发动机等专业； </p>
+                        <p>2.具备较强的逻辑思维，具有较强的沟通与协作能力； </p>
+                        <p>3.具有3年及以上相关领域工作经验者优先。</p>
+                        <div class="content-sub-title">
+                            <a href="mailto:hr@orienspace.com" target="_blank">简历投递方式：hr@orienspace.com</a>
                         </div>
                     </div>
                 </el-collapse-item>
@@ -78,7 +93,7 @@ export default {
 .join-page-container {
     .jonin-content {
         background-color: #000;
-        padding: 20px;
+        padding: 100px 0;
 
         /deep/.el-collapse {
             background-color: #000;
@@ -128,19 +143,29 @@ export default {
                 .arrow-icon {
                     color: #f49e17;
                     width: 33px;
+                    transform: translateX(-2px);
                     transition: transform 0.3s;
 
                     &.isActive {
                         color: $--color-primary;
-                        transform: scaleX(1.5) translateX(-2px);
+                        transform: scaleX(1.5) translateX(2px);
                     }
                 }
             }
         }
 
         .content-wrap {
-            .content-title {
+            padding: 0 30px;
+
+            .constent-title {
+                font-size: 20px;
+                line-height: 32px;
+                padding: 28px 0 10px;
+            }
+
+            .content-sub-title {
                 color: $--color-primary;
+                padding: 25px 0 15px;
             }
         }
     }

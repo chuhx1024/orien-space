@@ -23,32 +23,32 @@
                                     :unique-opened="true"
                                     @select="selectHandle"
                                 >
-                                    <el-menu-item index="ourHome">
+                                    <el-menu-item index="homePage">
                                         <nuxt-link class="nav-item" to="/">
                                             首页
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="0">
+                                    <el-menu-item index="servicePage">
                                         <nuxt-link class="nav-item" to="servicePage">
                                             服务
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="ourProducts">
+                                    <el-menu-item index="productPage">
                                         <nuxt-link class="nav-item" to="productPage">
                                             产品
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="1">
+                                    <el-menu-item index="newsPage">
                                         <nuxt-link class="nav-item" to="newsPage">
                                             新闻动态
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="2">
+                                    <el-menu-item index="joinPage">
                                         <nuxt-link class="nav-item" to="joinPage">
                                             加入我们
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="2">
+                                    <el-menu-item index="aboutPage">
                                         <nuxt-link class="nav-item" to="aboutPage">
                                             关于我们
                                         </nuxt-link>
