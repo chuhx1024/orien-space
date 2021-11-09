@@ -1,11 +1,11 @@
 <template>
-    <div class="BannerCom-container" :class="{isMobile: isMobile}">
-        <img class="wallpaper" :src="urlSource" alt="">
+    <div class="BannerCom-container">
+        <img class="wallpaper" :class="{isMobile: isMobile}" :src="urlSource" alt="">
         <section class="banner-wallpaper">
-            <h2 v-if="mainTitle" class="main-title" :class="{isMobile: isMobile}">
+            <h2 v-if="mainTitle" class="main-title">
                 {{ mainTitle }}
             </h2>
-            <div class="banner-desc">
+            <div class="banner-desc" :class="{isMobile: isMobile}">
                 <slot />
             </div>
             <div v-if="bannerBtn" class="banner-btn">
@@ -51,6 +51,10 @@ export default {
         .wallpaper {
             width: 100%;
             background-size: cover;
+
+            &.isMobile {
+                height: 200px;
+            }
         }
 
         .banner-wallpaper {
@@ -70,10 +74,6 @@ export default {
                 color: #fff;
                 font-size: 4.7rem;
                 line-height: 4.7rem;
-
-                &.isMobile {
-                    padding-top: 40px;
-                }
             }
 
             .banner-desc {
@@ -97,6 +97,11 @@ export default {
 
                 .big:nth-child(1) {
                     padding-top: 4rem;
+                }
+
+                &.isMobile {
+                    padding-left: 20px;
+                    padding-right: 20px;
                 }
             }
 

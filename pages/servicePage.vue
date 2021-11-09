@@ -1,7 +1,7 @@
 <template>
     <section class="service-page-container">
-        <banner-com
-            url-source="/img/news/news_banner.png"
+        <banner-com-small
+            url-source="/img/join/join_banner.jpg"
             main-title="服务"
         />
     </section>
@@ -9,10 +9,10 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import BannerCom from '../components/BannerCom.vue'
+import BannerComSmall from '../components/BannerComSmall.vue'
 export default {
     name: 'ServicePage',
-    components: { BannerCom },
+    components: { BannerComSmall },
     computed: {
         ...mapState('app', ['isMobile']),
     },

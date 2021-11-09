@@ -1,6 +1,6 @@
 <template>
     <section class="about-page-container">
-        <banner-com
+        <banner-com-small
             url-source="/img/about/about_banner.jpg"
             main-title="关于我们"
         />
@@ -174,11 +174,11 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import BannerCom from '../components/BannerCom.vue'
+import BannerComSmall from '../components/BannerComSmall.vue'
 
 export default {
     name: 'AboutPage',
-    components: { BannerCom },
+    components: { BannerComSmall },
     data () {
         return {
             timeLineData: [{

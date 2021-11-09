@@ -1,6 +1,6 @@
 <template>
     <section class="join-page-container">
-        <banner-com
+        <banner-com-small
             url-source="/img/join/join_banner.jpg"
             main-title="加入我们"
         >
@@ -10,7 +10,7 @@
             <p class="small">
                 我们为您提供具有市场竞争力的薪酬，期权，六险一金，挑战性的工作任务和人文的工作环境。
             </p>
-        </banner-com>
+        </banner-com-small>
         <div class="jonin-content">
             <el-collapse v-model="activeName" class="type-page" accordion @change="handleChange">
                 <el-collapse-item v-for="(item, index) in joinData" :key="index" :name="index">
@@ -57,15 +57,16 @@
                 </el-collapse-item>
             </el-collapse>
         </div>
+        </banner-com-small>
     </section>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import BannerCom from '../components/BannerCom.vue'
+import BannerComSmall from '../components/BannerComSmall.vue'
 export default {
     name: 'JoinPage',
-    components: { BannerCom },
+    components: { BannerComSmall },
     data () {
         return {
             activeName: 0,
