@@ -8,47 +8,46 @@
         <section class="news-content">
             <header class="news-nav type-page">
                 <el-tabs v-model="activeName" @tab-click="handleClick">
-                    <el-tab-pane label="公司动态" name="first" />
-                    <el-tab-pane label="媒体报道" name="second" />
+                    <el-tab-pane label="公司动态" name="0">
+                        <section class="news-group type-page">
+                            <el-row :gutter="20">
+                                <el-col v-for="item in newsData0" :key="item.id" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                                    <div class="grid-content bg-purple">
+                                        <img class="content-img" :src="item.imgUrl" alt="">
+                                        <div class="content-text">
+                                            <div class="time">
+                                                {{ item.createAt }}
+                                            </div>
+                                            <p class="desc">
+                                                {{ item.desc }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </section>
+                    </el-tab-pane>
+                    <el-tab-pane label="媒体报道" name="1">
+                        <section class="news-group type-page">
+                            <el-row :gutter="20">
+                                <el-col v-for="item in newsData1" :key="item.id" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                                    <div class="grid-content bg-purple">
+                                        <img class="content-img" :src="item.imgUrl" alt="">
+                                        <div class="content-text">
+                                            <div class="time">
+                                                {{ item.createAt }}
+                                            </div>
+                                            <p class="desc">
+                                                {{ item.desc }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </section>
+                    </el-tab-pane>
                 </el-tabs>
             </header>
-            <section class="news-content type-page">
-                <el-row :gutter="20">
-                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                        <div class="grid-content bg-purple">
-                            <img class="content-img" src="/img/news/news_0.jpeg" alt="">
-                            <div class="content-text">
-                                <span class="time">09/13/2021</span>
-                                <p class="desc">
-                                    东方空间西安动力中心成立，招聘正式启动
-                                </p>
-                            </div>
-                        </div>
-                    </el-col>
-                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                        <div class="grid-content bg-purple">
-                            <img class="content-img" src="/img/news/news_1.jpeg" alt="">
-                            <div class="content-text">
-                                <span class="time">09/08/2021</span>
-                                <p class="desc">
-                                    东方空间全新品牌视觉形象发布 东方空间全新品牌视觉形象发布东方空间全新品牌视觉形象发布
-                                </p>
-                            </div>
-                        </div>
-                    </el-col>
-                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                        <div class="grid-content bg-purple">
-                            <img class="content-img" src="/img/news/news_2.jpeg" alt="">
-                            <div class="content-text">
-                                <span class="time">06/09/2021</span>
-                                <p class="desc">
-                                    东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投
-                                </p>
-                            </div>
-                        </div>
-                    </el-col>
-                </el-row>
-            </section>
         </section>
     </section>
 </template>
@@ -62,6 +61,50 @@ export default {
     data () {
         return {
             activeName: 0,
+            newsData0: [
+                {
+                    id: 1,
+                    url: 'http://www.baidu.com',
+                    imgUrl: '/img/news/news_0.jpeg',
+                    createAt: '2012/12/04',
+                    desc: '东方空间西安动力中心成立，招聘正式启动',
+                    type: 0,
+                },
+                {
+                    id: 2,
+                    url: 'http://www.baidu.com',
+                    imgUrl: '/img/news/news_1.jpeg',
+                    createAt: '2012/12/04',
+                    desc: '东方空间全新品牌视觉形象发布 东方空间全新品牌视觉形象发布东方空间全新品牌视觉形象发布',
+                    type: 0,
+                },
+                {
+                    id: 3,
+                    url: 'http://www.baidu.com',
+                    imgUrl: '/img/news/news_2.jpeg',
+                    createAt: '2012/12/04',
+                    desc: '东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投',
+                    type: 0,
+                },
+                {
+                    id: 4,
+                    url: 'http://www.baidu.com',
+                    imgUrl: '/img/news/news_2.jpeg',
+                    createAt: '2012/12/04',
+                    desc: '东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投',
+                    type: 0,
+                },
+            ],
+            newsData1: [
+                {
+                    id: 1,
+                    url: 'http://www.baidu.com',
+                    imgUrl: '/img/news/news_0.jpeg',
+                    createAt: '2012/12/04',
+                    desc: '东方空间西安动力中心成立，招聘正式启动',
+                    type: 1,
+                },
+            ],
         }
     },
     computed: {
@@ -100,12 +143,14 @@ export default {
             }
         }
 
-        .news-content {
+        .news-group {
             .grid-content {
                 background-color: #000;
                 height: 214px;
                 overflow: hidden;
                 border: 1px solid #979797;
+                margin-bottom: 20px;
+                cursor: pointer;
 
                 .content-img {
                     height: 110px;
@@ -136,6 +181,12 @@ export default {
             }
 
             padding-bottom: 210px;
+        }
+    }
+
+    &.isMobile {
+        .news-content {
+            padding: 0 15px;
         }
     }
 }
