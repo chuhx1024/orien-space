@@ -29,8 +29,16 @@
                             </div>
                         </div>
                     </template>
-                    <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
-                    <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
+                    <div class="content-wrap">
+                        <div class="content-title">
+                            岗位职责
+                        </div>
+                        <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+                        <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
+                        <div class="content-title">
+                            任职要求
+                        </div>
+                    </div>
                 </el-collapse-item>
             </el-collapse>
         </div>
@@ -96,6 +104,7 @@ export default {
             .el-collapse-item__content {
                 background-color: #000;
                 border: none;
+                color: #fff;
             }
         }
 
@@ -126,6 +135,12 @@ export default {
                         transform: scaleX(1.5) translateX(-2px);
                     }
                 }
+            }
+        }
+
+        .content-wrap {
+            .content-title {
+                color: $--color-primary;
             }
         }
     }
