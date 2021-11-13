@@ -1,7 +1,7 @@
 <template>
     <section class="service-page-container">
         <banner-com-small
-            url-source="/img/service/service_1.jpg"
+            url-source="/img/service/service_banner.png"
             main-title="Are you ready to go universe？"
         >
             <p class="big" style="color: #fff;">

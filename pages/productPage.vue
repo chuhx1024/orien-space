@@ -34,7 +34,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-6_6tuanduiguanli" />
+                        <use xlink:href="#Orien-weibo" />
                     </svg>
                     <h3 class="icon-title">
                         成熟可靠
@@ -47,7 +47,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-bianzu7" />
+                        <use xlink:href="#Orien-a-123" />
                     </svg>
                     <h3 class="icon-title">
                         超大运力
@@ -60,7 +60,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-rocket" />
+                        <use xlink:href="#Orien-bianzu" />
                     </svg>
                     <h3 class="icon-title">
                         便捷发射
@@ -73,7 +73,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-4" />
+                        <use xlink:href="#Orien-a-cpuchuliqizhongyangchuliqixinpian" />
                     </svg>
                     <h3 class="icon-title">
                         高性能计算
@@ -214,9 +214,10 @@ export default {
         text-align: center;
 
         .icon {
-            color: $--color-primary;
+            color: #009dde;
             font-size: 47px;
             padding-top: 40px;
+            opacity: 0.5;
         }
 
         .icon-title {
