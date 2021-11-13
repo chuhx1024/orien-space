@@ -72,3 +72,9 @@ img {
 .fr {
     float: right;
 }
+
+.el-menu--horizontal {
+    .el-menu--popup {
+        min-width: auto;
+    }
+}

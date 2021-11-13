@@ -33,11 +33,14 @@
                                             服务
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-menu-item index="productPage">
-                                        <nuxt-link class="nav-item" to="productPage">
-                                            产品
-                                        </nuxt-link>
-                                    </el-menu-item>
+                                    <el-submenu index="ourTech">
+                                        <template slot="title">
+                                            <nuxt-link class="nav-item" to="productPage">
+                                                产品
+                                            </nuxt-link>
+                                        </template>
+                                        <our-product-item @closeItem="closeItem" />
+                                    </el-submenu>
                                     <el-menu-item index="newsPage">
                                         <nuxt-link class="nav-item" to="newsPage">
                                             新闻动态
@@ -72,9 +75,11 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import OurProductItem from './OurProductItem'
 export default {
     name: 'CluHeader',
     components: {
+        OurProductItem,
     },
     data () {
         return {
@@ -195,10 +200,11 @@ export default {
         background-color: transparent !important;
         height: 66px;
         line-height: 66px;
+        padding: 0 32px;
         border-bottom: none;
 
-        &:first-child {
-            padding-right: 27px;
+        &:last-child {
+            padding-right: 0;
         }
 
         &:hover {
@@ -210,6 +216,7 @@ export default {
     /deep/.el-submenu {
         height: 66px;
         line-height: 66px;
+        padding: 0 35px 0 18px;
     }
 
     /deep/.el-submenu__title {
@@ -223,7 +230,8 @@ export default {
     }
 
     /deep/.el-submenu__title i {
-        color: #1d2023;
+        color: #fff;
+        margin-top: 6px;
     }
 
     /deep/.el-submenu .el-submenu__title:hover {

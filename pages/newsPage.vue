@@ -2,7 +2,7 @@
 <template>
     <section class="newsPage-container" :class="{isMobile: isMobile}">
         <banner-com-small
-            url-source="/img/join/join_banner.jpg"
+            url-source="/img/news/news_banner.jpg"
             main-title="新闻"
         />
         <section class="news-content">
