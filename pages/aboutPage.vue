@@ -151,7 +151,7 @@
                 <el-col class="left-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <div class="contact-group">
                         <div class="contact-group-item">
-                            <span>公司地址 ：</span>北京市大兴区亦庄地盛北街经开大厦B座
+                            公司地址 ：北京市大兴区亦庄地盛北街经开大厦B座
                         </div>
                         <div class="contact-group-item">
                             商务合作邮箱 ：service@orienspace.com
@@ -553,6 +553,10 @@ export default {
                         color: #fff;
                         font-size: 17px;
                         line-height: 23px;
+
+                        &:first-child {
+                            line-height: 40px;
+                        }
                     }
                 }
             }
