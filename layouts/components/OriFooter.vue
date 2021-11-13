@@ -81,13 +81,13 @@
                         </svg>
                         <div class="contact-group">
                             <div class="contact-group-item">
-                                商务合作 ：SERVICE@ORIENSP
+                                商务合作 ：service@orienspace.com
                             </div>
                             <di class="contact-group-item">
-                                媒体合作 ：PR@ORIENSPACE.C
+                                媒体合作 ：pr@orienspace.com
                             </di>
                             <div class="contact-group-item">
-                                加入我们 ：HR@ORIENSPACE.C
+                                加入我们 ：hr@orienspace.com
                             </div>
                         </div>
                         <div class="QR-group">

@@ -127,8 +127,8 @@
             <div class="partners-content">
                 <div class="partners-img type-page">
                     <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
-                        <el-col v-for="item in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4">
-                            <img class="content-item" :src="`/img/about/${item}`" alt="">
+                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4">
+                            <img class="content-item" :class="{spImg: index === 4}" :src="`/img/about/${item}`" alt="">
                         </el-col>
                     </el-row>
                 </div>
@@ -151,21 +151,23 @@
                 <el-col class="left-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <div class="contact-group">
                         <div class="contact-group-item">
-                            <span>公司地址 ：</span>北京市
+                            <span>公司地址 ：</span>北京市大兴区亦庄地盛北街经开大厦B座
                         </div>
                         <div class="contact-group-item">
-                            商务合作邮箱 ：SERVICE@ORIENSP
+                            商务合作邮箱 ：service@orienspace.com
                         </div>
                         <di class="contact-group-item">
-                            媒体合作邮箱 ：PR@ORIENSPACE.C
+                            媒体合作邮箱 ：pr@orienspace.com
                         </di>
                         <div class="contact-group-item">
-                            加入我们 ：HR@ORIENSPACE.C
+                            加入我们 ：hr@orienspace.com
                         </div>
                     </div>
                 </el-col>
                 <el-col class="right-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-                    <img class="content-img" src="/img/about/contact.jpeg" alt="">
+                    <a href="https://j.map.baidu.com/ee/csoc" target="_blank">
+                        <img class="content-img" src="/img/about/contact.jpeg" alt="">
+                    </a>
                 </el-col>
             </el-row>
         </div>
@@ -189,20 +191,19 @@ export default {
                     { theTime: '2021.06', theEvent: '东方空间注册资本由2000万元增资至2亿元。' },
                     { theTime: '2021.05', theEvent: '东方空间党支部成立。' },
                     { theTime: '2021.05', theEvent: 'YL-1运载火箭项目完成方案论证评审工作，各分系统正式转入方案设计阶段。' },
-                    { theTime: '2021.04', theEvent: '东方空间注册资本由2000万元增资至2亿元。' },
+                    { theTime: '2021.04', theEvent: '完成4亿元天使轮系列融资。' },
                     { theTime: '2021.01', theEvent: '由山东宇航技术有限公司正式更名为东方空间技术（山东）有限公司。' },
                 ],
             },
             {
                 theYear: '2020年',
                 events: [
-                    { theTime: '2021.10', theEvent: '公司由山东宇航技术研究院有限公司正式更名为东方空间（山东）科技有限公司。截止2021年10月，实现山东海阳固体火箭AIT中心，北京研发中心，西安动力中心的产业布局。' },
-                    { theTime: '2021.09', theEvent: '对西安子公司东方空间（西安）宇航技术有限公司进行了收购。' },
-                    { theTime: '2021.06', theEvent: '东方空间注册资本由2000万元增资至2亿元。' },
-                    { theTime: '2021.05', theEvent: '东方空间党支部成立。' },
-                    { theTime: '2021.05', theEvent: 'YL-1运载火箭项目完成方案论证评审工作，各分系统正式转入方案设计阶段。' },
-                    { theTime: '2021.04', theEvent: '东方空间注册资本由2000万元增资至2亿元。' },
-                    { theTime: '2021.01', theEvent: '由山东宇航技术有限公司正式更名为东方空间技术（山东）有限公司。' },
+                    { theTime: '2021.12', theEvent: '在山东省海阳市与中国电科天地办/天地信息网络有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
+                    { theTime: '2021.11', theEvent: '与长光卫星技术有限公司举行了战略合作协议和发射意向协议签约仪式。' },
+                    { theTime: '2021.11', theEvent: '与北京最终前沿深空科技有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
+                    { theTime: '2021.09', theEvent: '北京分公司完成工商注册正式成立。北京分公司定位为山东宇航北京研发中心，主要开展火箭、卫星等项目的技术开发和市场开发工作。' },
+                    { theTime: '2021.07', theEvent: '完成首轮融资，融资金额5000万元。' },
+                    { theTime: '2021.06', theEvent: '公司正式成立。' },
                 ],
             },
             ],
@@ -216,7 +217,7 @@ export default {
                 'honour_0.jpg',
                 'honour_0.jpg',
             ],
-            partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_2.jpeg', 'partners_4.jpeg', 'partners_5.jpeg'],
+            partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_3.png', 'partners_4.jpeg', 'partners_5.jpeg'],
             partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
         }
     },
@@ -232,6 +233,7 @@ export default {
 .about-page-container {
     .about-desc {
         background-color: #000;
+        padding-top: 70px;
 
         .left-content {
             display: flex;
@@ -256,6 +258,9 @@ export default {
         }
 
         &.isMobile {
+            padding-left: 15px;
+            padding-right: 15px;
+
             .left-text {
                 font-size: 14px;
             }
@@ -274,6 +279,8 @@ export default {
         }
 
         .market-content {
+            padding-bottom: 149px;
+
             .left-content-img {
                 width: 100%;
             }
@@ -300,6 +307,8 @@ export default {
         }
 
         &.isMobile {
+            padding-bottom: 1px;
+
             .market-title {
                 font-size: 33px;
                 padding: 70px 0 50px;
@@ -364,6 +373,10 @@ export default {
             padding: 40px 0 0 100px;
             color: #fff;
 
+            /deep/.el-timeline-item {
+                padding-bottom: 31px;
+            }
+
             /deep/.el-timeline-item__timestamp {
                 position: absolute;
                 left: -100px;
@@ -407,6 +420,10 @@ export default {
 
             .timeline-item {
                 padding: 50px 0 0 70px;
+
+                /deep/.el-timeline-item {
+                    padding-bottom: 20px;
+                }
 
                 /deep/.el-timeline-item__timestamp {
                     left: -70px;
@@ -488,6 +505,11 @@ export default {
                     width: 80px;
                     padding-top: 30px;
                     transform: translateX(40%);
+                }
+
+                .spImg {
+                    width: 53px;
+                    transform: translateX(90%);
                 }
             }
 

@@ -8,6 +8,7 @@
                 &quot;引力&quot;系列运载火箭
             </p>
         </banner-com>
+        <light-beam />
         <div class="product-desc type-page">
             <template v-if="isMobile">
                 <p class="product-desc-first">
@@ -200,7 +201,7 @@ export default {
     .product-desc {
         font-size: 17px;
         text-align: center;
-        padding: 100px 15px 0;
+        padding: 58px 15px;
         line-height: 23px;
 
         .product-desc-second {
