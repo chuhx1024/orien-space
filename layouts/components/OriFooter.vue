@@ -148,6 +148,14 @@ export default {
         padding: 60px 15px;
         border-top: 1px solid #f49e17;
 
+        /deep/.el-col {
+            transform: translateX(77px);
+
+            &:last-child {
+                transform: translateX(0);
+            }
+        }
+
         .content-logo {
             display: flex;
             padding-bottom: 30px;
@@ -243,6 +251,10 @@ export default {
 
     &.isMobile {
         font-weight: 400;
+
+        /deep/.el-col {
+            transform: translateX(0);
+        }
 
         .content-logo {
             padding-left: 30px;

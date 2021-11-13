@@ -38,6 +38,7 @@
                 key="dfasdfasdf"
                 :nav="false"
                 :loop="true"
+                :autoplay-timeout="3000"
                 :autoplay="true"
                 :items="1"
                 :dots="false"

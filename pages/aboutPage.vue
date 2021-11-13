@@ -249,7 +249,7 @@ export default {
             padding: 109px 42px;
 
             .left-text {
-                font-size: 17px;
+                font-size: 16px;
                 color: #fff;
                 line-height: 23px;
 
@@ -298,16 +298,20 @@ export default {
                 padding: 12% 10%;
                 color: #fff;
 
-                .text-title {
-                    font-size: 25px;
-                    font-weight: 500;
-                    line-height: 37px;
-                }
+                .text-group {
+                    padding-bottom: 60px;
 
-                .text-desc {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 37px;
+                    .text-title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 37px;
+                    }
+
+                    .text-desc {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 37px;
+                    }
                 }
             }
         }
@@ -322,12 +326,14 @@ export default {
 
             .market-content {
                 .left-content-text {
-                    .text-title {
-                        font-size: 18px;
-                    }
+                    .text-group {
+                        .text-title {
+                            font-size: 18px;
+                        }
 
-                    .text-desc {
-                        font-size: 13px;
+                        .text-desc {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
@@ -388,7 +394,7 @@ export default {
                 left: -100px;
                 top: 2px;
                 color: #fff;
-                font-size: 13px;
+                font-size: 16px;
             }
 
             /deep/.el-timeline-item__tail {
@@ -398,7 +404,7 @@ export default {
             }
 
             /deep/.el-timeline-item__node--normal {
-                left: -14px;
+                left: -13px;
                 width: 8px;
                 height: 8px;
             }
@@ -409,14 +415,14 @@ export default {
 
             /deep/.el-timeline-item__content {
                 position: relative;
-                top: 2px;
+                top: 0;
                 left: -2px;
                 color: #fff;
-                font-size: 13px;
+                font-size: 16px;
 
                 p {
-                    font-size: 13px;
-                    line-height: 15px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
         }

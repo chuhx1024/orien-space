@@ -75,7 +75,7 @@ export default {
                 {
                     id: 2,
                     url: 'https://mp.weixin.qq.com/s/9iAAwTDJNgljoE_2eha67A',
-                    imgUrl: '/img/news/news_1.jpeg',
+                    imgUrl: '/img/news/news_1.png',
                     createAt: '09/08/2023',
                     desc: '东方空间全新品牌视觉形象发布',
                     type: 0,
