@@ -16,6 +16,14 @@
             </p>
         </banner-com>
         <light-beam />
+        <div class="home-title" :class="{isMobile: isMobile}">
+            <p class="desc">
+                让空间触手可及
+            </p>
+            <p class="mark">
+                — &nbsp;&nbsp;姚颂
+            </p>
+        </div>
         <div class="img-content">
             <img class="home-img" src="/img/index/index_1.png" alt="">
             <div class="btn-left" @click="goToHash('productPage', 'numberFirst')" />
@@ -64,7 +72,6 @@
 <script>
 import { mapState } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
-// import LightBeam from '../components/LightBeam.vue'
 import { goToHash } from '@/utiles/tool.js'
 export default {
     name: 'HomePage',
@@ -113,6 +120,24 @@ export default {
         .home-img {
             width: 100%;
             background-size: cover;
+        }
+    }
+
+    .home-title {
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+
+        .desc {
+            font-size: 3rem;
+            line-height: 3rem;
+            padding-bottom: 2.3rem;
+        }
+
+        .mark {
+            font-size: 1.7rem;
+            line-height: 3.2rem;
+            padding-bottom: 3.8rem;
         }
     }
 
