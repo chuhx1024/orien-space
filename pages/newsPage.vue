@@ -12,22 +12,24 @@
                         <section class="news-group type-page">
                             <el-row :gutter="20">
                                 <el-col v-for="item in newsData0" :key="item.id" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                                    <div class="grid-content bg-purple">
-                                        <img class="content-img" :src="item.imgUrl" alt="">
-                                        <div class="content-text">
-                                            <div class="time">
-                                                {{ item.createAt }}
+                                    <a :href="item.url" target="_blank">
+                                        <div class="grid-content bg-purple">
+                                            <img class="content-img" :src="item.imgUrl" alt="">
+                                            <div class="content-text">
+                                                <div class="time">
+                                                    {{ item.createAt }}
+                                                </div>
+                                                <p class="desc">
+                                                    {{ item.desc }}
+                                                </p>
                                             </div>
-                                            <p class="desc">
-                                                {{ item.desc }}
-                                            </p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </el-col>
                             </el-row>
                         </section>
                     </el-tab-pane>
-                    <el-tab-pane label="媒体报道" name="1">
+                    <!-- <el-tab-pane label="媒体报道" name="1">
                         <section class="news-group type-page">
                             <el-row :gutter="20">
                                 <el-col v-for="item in newsData1" :key="item.id" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
@@ -45,7 +47,7 @@
                                 </el-col>
                             </el-row>
                         </section>
-                    </el-tab-pane>
+                    </el-tab-pane> -->
                 </el-tabs>
             </header>
         </section>
@@ -64,34 +66,26 @@ export default {
             newsData0: [
                 {
                     id: 1,
-                    url: 'http://www.baidu.com',
+                    url: 'https://mp.weixin.qq.com/s/gtYX-gKRW6ZihIkmjHdmsA',
                     imgUrl: '/img/news/news_0.jpeg',
-                    createAt: '2012/12/04',
+                    createAt: '09/13/2021',
                     desc: '东方空间西安动力中心成立，招聘正式启动',
                     type: 0,
                 },
                 {
                     id: 2,
-                    url: 'http://www.baidu.com',
+                    url: 'https://mp.weixin.qq.com/s/9iAAwTDJNgljoE_2eha67A',
                     imgUrl: '/img/news/news_1.jpeg',
-                    createAt: '2012/12/04',
-                    desc: '东方空间全新品牌视觉形象发布 东方空间全新品牌视觉形象发布东方空间全新品牌视觉形象发布',
+                    createAt: '09/08/2023',
+                    desc: '东方空间全新品牌视觉形象发布',
                     type: 0,
                 },
                 {
                     id: 3,
-                    url: 'http://www.baidu.com',
+                    url: 'https://mp.weixin.qq.com/s/qc-Q7O8gfTly1WK57cIz4A',
                     imgUrl: '/img/news/news_2.jpeg',
-                    createAt: '2012/12/04',
-                    desc: '东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投',
-                    type: 0,
-                },
-                {
-                    id: 4,
-                    url: 'http://www.baidu.com',
-                    imgUrl: '/img/news/news_2.jpeg',
-                    createAt: '2012/12/04',
-                    desc: '东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投 、红杉联合领投 间完成4亿元天使轮系列融资，经纬、红杉联合领投',
+                    createAt: '06/09/2022',
+                    desc: '东方空间完成4亿元天使轮系列融资，经纬、红杉联合领投',
                     type: 0,
                 },
             ],
