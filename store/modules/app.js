@@ -1,5 +1,5 @@
 const state = {
-    isMobile: true,
+    isMobile: false,
     isSmallScreen: false,
 }
 

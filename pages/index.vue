@@ -27,9 +27,23 @@
             <img class="home-img" src="/img/index/index_3.jpg" alt="">
             <div class="btn-left" @click="goToHash('productPage', 'numberThird')" />
         </div>
-        <div class="img-content">
-            <img class="home-img" src="/img/index/index_4.jpg" alt="">
-            <div class="btn-left" @click="goToHash" />
+        <div class="carouser-content">
+            <carousel
+                key="dfasdfasdf"
+                :nav="false"
+                :items="1"
+            >
+                <div
+                    v-for="(item, index) in carouselData"
+                    :key="index"
+                    class="carouser-card"
+                >
+                    <img class="wallpaper" :src="item.url" alt="">
+                    <div class="carousel-title">
+                        {{ item.title }}
+                    </div>
+                </div>
+            </carousel>
         </div>
         <div class="home-dese">
             <p class="text-content type-page" :class="{isMobile: isMobile}">
@@ -47,6 +61,17 @@ import { goToHash } from '@/utiles/tool.js'
 export default {
     name: 'HomePage',
     components: { BannerCom },
+    data () {
+        return {
+            carouselData: [
+                { title: '我们为什么发射火箭', url: '/img/index/carouse_0.jpg' },
+                { title: '通信', url: '/img/index/carouse_1.jpg' },
+                { title: '气象变化', url: '/img/index/carouse_2.jpg' },
+                { title: '遥感', url: '/img/index/carouse_3.jpg' },
+                { title: '导航', url: '/img/index/carouse_4.jpg' },
+            ],
+        }
+    },
     computed: {
         ...mapState('app', ['isMobile']),
     },
@@ -59,8 +84,6 @@ export default {
 </script>
 <style lang='scss' scoped>
 .home-page-container {
-    color: pink;
-
     .img-content {
         position: relative;
 
@@ -82,6 +105,38 @@ export default {
         .home-img {
             width: 100%;
             background-size: cover;
+        }
+    }
+
+    .carouser-content {
+        position: relative;
+        background-color: #000;
+
+        /deep/.owl-theme .owl-dots .owl-dot.active span, /deep/.owl-theme .owl-dots .owl-dot:hover span {
+            background: $--color-primary;
+        }
+
+        /deep/.owl-dots {
+            margin-top: 47px;
+        }
+
+        .wallpaper {
+            width: 100%;
+            background-size: cover;
+        }
+
+        .carousel-title {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 66px;
         }
     }
 
