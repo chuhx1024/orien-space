@@ -1,10 +1,10 @@
 <template>
     <div class="productPage-container">
         <banner-com
-            url-source="/img/index/index_0.jpg"
+            url-source="/img/product/banner_0.jpg"
             main-title="产品"
         >
-            <p class="big">
+            <p class="big" style="color: #fff;">
                 &quot;引力&quot;系列运载火箭
             </p>
         </banner-com>
@@ -33,7 +33,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-4" />
+                        <use xlink:href="#Orien-a-6_6tuanduiguanli" />
                     </svg>
                     <h3 class="icon-title">
                         成熟可靠
@@ -46,7 +46,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-4" />
+                        <use xlink:href="#Orien-a-bianzu7" />
                     </svg>
                     <h3 class="icon-title">
                         超大运力
@@ -59,7 +59,7 @@
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#Orien-a-4" />
+                        <use xlink:href="#Orien-rocket" />
                     </svg>
                     <h3 class="icon-title">
                         便捷发射
@@ -213,6 +213,7 @@ export default {
         text-align: center;
 
         .icon {
+            color: $--color-primary;
             font-size: 47px;
             padding-top: 40px;
         }
