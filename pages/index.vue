@@ -15,16 +15,17 @@
                 与投资人跟投
             </p>
         </banner-com>
+        <light-beam />
         <div class="img-content">
-            <img class="home-img" src="/img/index/index_1.jpg" alt="">
+            <img class="home-img" src="/img/index/index_1.png" alt="">
             <div class="btn-left" @click="goToHash('productPage', 'numberFirst')" />
         </div>
         <div class="img-content">
-            <img class="home-img" src="/img/index/index_2.jpg" alt="">
+            <img class="home-img" src="/img/index/index_2.png" alt="">
             <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
         </div>
         <div class="img-content">
-            <img class="home-img" src="/img/index/index_3.jpg" alt="">
+            <img class="home-img" src="/img/index/index_3.png" alt="">
             <div class="btn-left" @click="goToHash('productPage', 'numberThird')" />
         </div>
         <div class="carouser-content">
@@ -63,6 +64,7 @@
 <script>
 import { mapState } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
+// import LightBeam from '../components/LightBeam.vue'
 import { goToHash } from '@/utiles/tool.js'
 export default {
     name: 'HomePage',
