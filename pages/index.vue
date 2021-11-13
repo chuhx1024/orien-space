@@ -60,12 +60,12 @@
         <div class="img-content">
             <img class="home-img" src="/img/index/index_gif.gif" alt="">
         </div>
-        <div class="home-dese">
+        <!-- <div class="home-dese">
             <p class="text-content type-page" :class="{isMobile: isMobile}">
                 东方空间由资深航天技术团队与成功科技创业者联合创办，旨在帮助人类拓展发展空间，让更多人享受太空新文明，有效补充全球航天发射能力。公司以现代化科技公司管理模式，严谨、敏捷、协作的精神，希望探索出全新的高效率航天技术发展范式。
                 <span class="mark"> — 姚颂</span>
             </p>
-        </div>
+        </div> -->
     </section>
 </template>
 
