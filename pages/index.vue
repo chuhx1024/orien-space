@@ -31,7 +31,10 @@
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
+                :loop="true"
+                :autoplay="true"
                 :items="1"
+                :dots="false"
             >
                 <div
                     v-for="(item, index) in carouselData"
@@ -44,6 +47,9 @@
                     </div>
                 </div>
             </carousel>
+        </div>
+        <div class="img-content">
+            <img class="home-img" src="/img/index/index_gif.gif" alt="">
         </div>
         <div class="home-dese">
             <p class="text-content type-page" :class="{isMobile: isMobile}">
