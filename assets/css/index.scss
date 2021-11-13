@@ -74,6 +74,16 @@ img {
 }
 
 .el-menu--horizontal {
+    .OurTechItem-container {
+        .el-menu-item {
+            padding: 0 !important;
+
+            &:hover {
+                background-color: #0f2640 !important;
+            }
+        }
+    }
+
     .el-menu--popup {
         min-width: auto;
     }

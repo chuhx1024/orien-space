@@ -33,7 +33,7 @@
                                             服务
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-submenu index="ourTech">
+                                    <el-submenu index="productPage">
                                         <template slot="title">
                                             <nuxt-link class="nav-item" to="productPage">
                                                 产品
