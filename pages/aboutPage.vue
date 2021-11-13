@@ -83,7 +83,7 @@
                 </el-tab-pane>
             </el-tabs>
         </div>
-        <div class="about-honour" :class="{isMobile: isMobile}">
+        <!-- <div class="about-honour" :class="{isMobile: isMobile}">
             <div class="honour-title">
                 荣誉资质
             </div>
@@ -119,7 +119,7 @@
                     </carousel>
                 </template>
             </div>
-        </div>
+        </div> -->
         <div class="about-partners" :class="{isMobile: isMobile}">
             <div class="partners-title">
                 投资者关系
@@ -154,13 +154,19 @@
                             公司地址 ：北京市大兴区亦庄地盛北街经开大厦B座
                         </div>
                         <div class="contact-group-item">
-                            商务合作邮箱 ：service@orienspace.com
+                            商务合作 ：bd@orienspace.com
                         </div>
                         <di class="contact-group-item">
-                            媒体合作邮箱 ：pr@orienspace.com
+                            媒体合作 ：pr@orienspace.com
                         </di>
                         <div class="contact-group-item">
-                            加入我们 ：hr@orienspace.com
+                            人才招聘 ：hr@orienspace.com
+                        </div>
+                        <div class="contact-group-item">
+                            投融资合作：ir@orienspace.com
+                        </div>
+                        <div class="contact-group-item">
+                            联系电话：010-67857929
                         </div>
                     </div>
                 </el-col>
@@ -198,12 +204,12 @@ export default {
             {
                 theYear: '2020年',
                 events: [
-                    { theTime: '2021.12', theEvent: '在山东省海阳市与中国电科天地办/天地信息网络有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
-                    { theTime: '2021.11', theEvent: '与长光卫星技术有限公司举行了战略合作协议和发射意向协议签约仪式。' },
-                    { theTime: '2021.11', theEvent: '与北京最终前沿深空科技有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
-                    { theTime: '2021.09', theEvent: '北京分公司完成工商注册正式成立。北京分公司定位为山东宇航北京研发中心，主要开展火箭、卫星等项目的技术开发和市场开发工作。' },
-                    { theTime: '2021.07', theEvent: '完成首轮融资，融资金额5000万元。' },
-                    { theTime: '2021.06', theEvent: '公司正式成立。' },
+                    { theTime: '2020.12', theEvent: '在山东省海阳市与中国电科天地办/天地信息网络有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
+                    { theTime: '2020.11', theEvent: '与长光卫星技术有限公司举行了战略合作协议和发射意向协议签约仪式。' },
+                    { theTime: '2020.11', theEvent: '与北京最终前沿深空科技有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
+                    { theTime: '2020.09', theEvent: '北京分公司完成工商注册正式成立。北京分公司定位为山东宇航北京研发中心，主要开展火箭、卫星等项目的技术开发和市场开发工作。' },
+                    { theTime: '2020.07', theEvent: '完成首轮融资，融资金额5000万元。' },
+                    { theTime: '2020.06', theEvent: '公司正式成立。' },
                 ],
             },
             ],
@@ -552,7 +558,7 @@ export default {
                     .contact-group-item {
                         color: #fff;
                         font-size: 17px;
-                        line-height: 23px;
+                        line-height: 28px;
 
                         &:first-child {
                             line-height: 40px;

@@ -81,13 +81,19 @@
                         </svg>
                         <div class="contact-group">
                             <div class="contact-group-item">
-                                商务合作 ：service@orienspace.com
+                                商务合作 ：bd@orienspace.com
                             </div>
                             <di class="contact-group-item">
                                 媒体合作 ：pr@orienspace.com
                             </di>
                             <div class="contact-group-item">
-                                加入我们 ：hr@orienspace.com
+                                人才招聘 ：hr@orienspace.com
+                            </div>
+                            <div class="contact-group-item">
+                                投融资合作：ir@orienspace.com
+                            </div>
+                            <div class="contact-group-item">
+                                联系电话：010-67857929
                             </div>
                         </div>
                         <div class="QR-group">

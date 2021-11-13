@@ -103,7 +103,7 @@ export default {
             .banner-btn {
                 width: 13rem;
                 min-width: 100px;
-                margin-top: 13.5rem;
+                margin-top: 8.9rem;
 
                 /deep/.el-button {
                     width: 100%;

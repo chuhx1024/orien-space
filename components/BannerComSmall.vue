@@ -78,14 +78,14 @@ export default {
 
             .banner-desc {
                 .small {
-                    font-size: 12px;
-                    line-height: 17px;
+                    font-size: 1.2rem;
+                    line-height: 2.4rem;
                     font-weight: 100;
                     color: #fff;
                 }
 
                 .small:nth-child(1) {
-                    padding-top: 26px;
+                    padding-top: 2.6rem;
                 }
 
                 .big {
