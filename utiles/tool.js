@@ -17,3 +17,10 @@ export function goToHash (path, hash) {
         }, 100)
     }
 }
+
+export function gotoMail (url) {
+    const a = document.createElement('a')
+    a.href = `mailto:${url}`
+    a.target = '_blank'
+    a.click()
+}

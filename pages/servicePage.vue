@@ -21,11 +21,10 @@
         </div>
         <div class="img-content">
             <img class="home-img" src="/img/service/service_0.jpg" alt="">
-            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
         </div>
         <div class="img-content">
             <img class="home-img" src="/img/service/service_1.jpg" alt="">
-            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+            <div class="btn-left" @click="goToHash('productPage', 'numberSecond')" />
         </div>
         <div class="img-content">
             <img class="home-img" src="/img/service/service_2.jpg" alt="">
@@ -33,7 +32,7 @@
         </div>
         <div class="img-content">
             <img class="home-img" src="/img/service/service_3.jpg" alt="">
-            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+            <div class="btn-left" @click="goToHash('productPage', 'numberSecond')" />
         </div>
         <div class="carouser-content">
             <carousel
@@ -111,15 +110,16 @@ export default {
                 position: absolute;
                 top: 33%;
                 left: 7%;
-                width: 29%;
-                height: 34%;
-                // border: 1px solid #ccc;
+                width: 31%;
+                height: 50%;
+                border: 1px solid #ccc;
                 cursor: pointer;
             }
 
             .btn-right {
                 left: 64%;
                 top: 30%;
+                border: 1px solid #ccc;
             }
 
             .home-img {

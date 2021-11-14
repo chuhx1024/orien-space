@@ -116,10 +116,10 @@
                         <span class="fr">{{ spItem.num }}&nbsp;</span>
                     </p>
                     <div class="power-btn">
-                        <el-button plain>
+                        <el-button plain @click="gotoMail('bd@orienspace.com')">
                             预约发射
                         </el-button>
-                        <el-button plain>
+                        <el-button plain @click="gotoMail('bd@orienspace.com')">
                             预约观看
                         </el-button>
                     </div>
@@ -135,6 +135,7 @@
 <script>
 import { mapState } from 'vuex'
 import BannerCom from '../components/BannerCom.vue'
+import { gotoMail } from '@/utiles/tool.js'
 export default {
     name: 'ProductPage',
     components: { BannerCom },
@@ -188,6 +189,10 @@ export default {
     },
     computed: {
         ...mapState('app', ['isMobile']),
+    },
+
+    methods: {
+        gotoMail,
     },
 
 }
