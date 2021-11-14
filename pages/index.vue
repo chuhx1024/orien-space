@@ -61,7 +61,7 @@
         <div class="img-container">
             <img class="wallpaper" src="/img/index/index_22.png" alt="">
             <section class="text-wallpaper">
-                <section v-if="!isMobile" class="text-content text-align">
+                <section v-if="!isMobile" class="text-content type-page text-align">
                     <h2 class="main-title-icon">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#Orien-yinli-2-copy" />
@@ -97,7 +97,7 @@
         <div class="img-container">
             <img class="wallpaper" src="/img/index/index_33.png" alt="">
             <section class="text-wallpaper">
-                <section v-if="!isMobile" class="text-content">
+                <section v-if="!isMobile" class="text-content type-page">
                     <h2 class="main-title-icon">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#Orien-yinli-3-copy" />
@@ -244,27 +244,26 @@ export default {
                 text-align: left;
 
                 .main-title-icon {
-                    font-size: 12rem;
+                    font-size: 120px;
                     color: #fff;
-                    margin-bottom: -2.8rem;
+                    margin-bottom: -28px;
                 }
 
                 .text-desc {
-                    font-size: 1.2rem;
+                    font-size: 16px;
                     color: #c9caca;
-                    line-height: 1.7rem;
+                    line-height: 24px;
                 }
 
                 .text-btn {
-                    padding-top: 3.5rem;
+                    padding-top: 35px;
 
                     /deep/.el-button {
                         background-color: transparent;
-                        height: 3.8rem;
-                        width: 12.9rem;
-                        font-size: 1.3rem;
+                        height: 38px;
+                        width: 129px;
+                        font-size: 16px;
                         color: #fff;
-                        border-width: 0.1rem;
                         padding: 0;
                     }
                 }

@@ -161,12 +161,12 @@ export default {
                     .time {
                         color: #979b9b;
                         font-size: 12px;
-                        padding-bottom: 10px;
+                        padding-bottom: 5px;
                     }
 
                     .desc {
-                        font-size: 13px;
-                        line-height: 18px;
+                        font-size: 16px;
+                        line-height: 20px;
                         overflow: hidden;
                         display: -webkit-box;
                         white-space: normal !important;

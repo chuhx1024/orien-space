@@ -153,9 +153,13 @@ export default {
                 padding: 28px 0 10px;
             }
 
+            p {
+                font-size: 16px;
+            }
+
             .content-sub-title {
                 color: $--color-primary;
-                padding: 25px 0 15px;
+                padding: 25px 0 16px;
             }
         }
     }
