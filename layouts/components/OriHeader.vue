@@ -256,15 +256,21 @@ export default {
         }
     }
 
+    /deep/.el-submenu__icon-arrow {
+        display: none;
+    }
+
     /deep/.el-submenu {
         height: 66px;
         line-height: 66px;
-        padding: 0 35px 0 18px;
+        // padding: 0 35px 0 18px;
+        padding: 0 32px;
     }
 
     /deep/.el-submenu__title {
         height: 66px;
         line-height: 66px;
+        padding: 0 !important;
         border-bottom: none !important;
     }
 

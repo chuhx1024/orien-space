@@ -167,7 +167,7 @@ export default {
             justify-content: center;
             align-items: center;
             color: #fff;
-            font-size: 6.6rem;
+            font-size: 3rem;
         }
     }
 
