@@ -1,5 +1,6 @@
 <template>
     <div class="OriFooter" :class="{isMobile: isMobile}">
+        <div class="footer-line type-page" />
         <div class="OriFooter-contant type-page">
             <el-row :type="isMobile ? '' : 'flex'" justify="space-between">
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
@@ -14,7 +15,7 @@
                         <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
                             服务
                         </h3>
-                        <el-row class="item-group">
+                        <el-row v-if="!isMobile" class="item-group">
                             <el-col class="group-grid" :span="24">
                                 <div>太空物流</div>
                                 <div>商业合作</div>
@@ -29,7 +30,7 @@
                         <h3 class="item-title" @click="goToNext('productPage')">
                             产品
                         </h3>
-                        <el-row class="item-group">
+                        <el-row v-if="!isMobile" class="item-group">
                             <el-col class="group-grid" :span="24">
                                 <div @click="goToHash('productPage', 'numberFirst')">
                                     引力1号
@@ -63,7 +64,7 @@
                         <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
                             关于我们
                         </h3>
-                        <el-row class="item-group">
+                        <el-row v-if="!isMobile" class="item-group">
                             <el-col class="group-grid" :span="24">
                                 <div>发展历程</div>
                                 <div>资质荣誉</div>
@@ -144,9 +145,12 @@ export default {
     color: #c9caca;
     font-weight: 200;
 
+    .footer-line {
+        border-top: 1px solid #f49e17;
+    }
+
     .OriFooter-contant {
         padding: 60px 15px;
-        border-top: 1px solid #f49e17;
 
         /deep/.el-col {
             transform: translateX(77px);
@@ -257,11 +261,11 @@ export default {
         }
 
         .content-logo {
-            padding-left: 30px;
+            padding-left: 15px;
         }
 
         .content-item {
-            padding-left: 30px;
+            padding-left: 15px;
             padding-bottom: 10px;
             padding-top: 0;
 

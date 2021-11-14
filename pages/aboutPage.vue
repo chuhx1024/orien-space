@@ -515,6 +515,7 @@ export default {
             .partners-img {
                 .content-item {
                     width: 80px;
+                    height: 38px;
                     padding-top: 30px;
                     transform: translateX(40%);
                 }
