@@ -285,7 +285,7 @@ export default {
         }
 
         .market-content {
-            padding-bottom: 149px;
+            padding-bottom: 50px;
 
             .left-content-img {
                 width: 100%;
@@ -519,10 +519,10 @@ export default {
                     transform: translateX(40%);
                 }
 
-                .spImg {
-                    width: 53px;
-                    transform: translateX(90%);
-                }
+                // .spImg {
+                //     width: 53px;
+                //     transform: translateX(90%);
+                // }
             }
 
             .partners-text {
@@ -565,10 +565,6 @@ export default {
                         color: #fff;
                         font-size: 17px;
                         line-height: 28px;
-
-                        &:first-child {
-                            line-height: 40px;
-                        }
                     }
                 }
             }

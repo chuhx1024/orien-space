@@ -165,7 +165,7 @@ export default {
             // top: 10px;
 
             .content-logo-icon {
-                transform: scale(1.5) translateX(14px);
+                transform: scale(1.5) translateX(9px);
                 height: 28px;
                 color: #fff;
                 font-size: 90px;

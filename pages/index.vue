@@ -6,10 +6,10 @@
             banner-btn="了解更多"
         >
             <p class="big">
-                由经纬、红杉领头
+                由经纬、红杉领投
             </p>
             <p class="big">
-                三一重工、天赋资本、三江资本、SEE Fund等知名投资人跟投
+                三一重工、天赋资本、三江资本、SEE Fund等知名基金跟投
             </p>
         </banner-com>
         <light-beam />
