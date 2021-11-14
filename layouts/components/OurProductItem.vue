@@ -28,10 +28,7 @@ import { goToHash } from '@/utiles/tool.js'
 export default {
     name: 'OurTechItem',
     computed: {
-        ...mapState({
-            isMobile: state => state.isMobile,
-            lang: state => state.lang,
-        }),
+        ...mapState('app', ['isMobile']),
     },
     methods: {
         hiddenWindow (path, hash) {
@@ -65,7 +62,15 @@ export default {
 
         &.isMobile {
             font-size: 12px;
-            padding: 0 36px;
+            padding: 10px 15px;
+
+            .contentText {
+                padding: 5px 0;
+
+                /deep/.el-menu-item {
+                    padding-left: 0 !important;
+                }
+            }
         }
     }
 </style>

@@ -366,13 +366,20 @@ export default {
         /deep/.el-submenu {
             height: auto;
             line-height: 43px;
+            padding-right: 30px;
+            padding-left: 20px;
         }
 
         /deep/.el-submenu__title {
             height: auto;
             line-height: 43px;
+            padding-left: 0 !important;
             background-color: transparent !important;
             -webkit-tap-highlight-color: transparent;
+        }
+
+        /deep/.el-submenu__icon-arrow {
+            margin: 0;
         }
 
         /deep/.el-submenu .el-submenu__title:hover {
