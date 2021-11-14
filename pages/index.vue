@@ -21,24 +21,120 @@
                 — &nbsp;&nbsp;姚颂
             </p>
         </div>
-        <div class="img-content">
-            <img class="home-img" src="/img/index/index_1.png" alt="">
-            <div class="btn-left" @click="goToHash('productPage', 'numberFirst')" />
+        <div class="img-container">
+            <img class="wallpaper" src="/img/index/index_11.png" alt="">
+            <section class="text-wallpaper">
+                <section v-if="!isMobile" class="text-content">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-1-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对</p>
+                        <p>多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1</p>
+                        <p>号成为商业发射的极佳选择</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberFirst')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+                <section v-else class="text-content-mobile">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-1-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1号成为商业发射的极佳选择</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberFirst')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+            </section>
         </div>
-        <div class="img-content">
-            <img class="home-img" src="/img/index/index_2.png" alt="">
-            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+        <div class="img-container">
+            <img class="wallpaper" src="/img/index/index_22.png" alt="">
+            <section class="text-wallpaper">
+                <section v-if="!isMobile" class="text-content text-align">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-2-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>率先实现将固体大推力助推器与液体芯级相结合的设计，使引</p>
+                        <p>力2号满足更高轨道发射需求</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberSecond')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+                <section v-else class="text-content-mobile text-align">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-2-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>率先实现将固体大推力助推器与液体芯级相结合的设计，使引力2号满足更高轨道发射需求</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberSecond')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+            </section>
         </div>
-        <div class="img-content">
-            <img class="home-img" src="/img/index/index_3.png" alt="">
-            <div class="btn-left" @click="goToHash('productPage', 'numberThird')" />
+        <div class="img-container">
+            <img class="wallpaper" src="/img/index/index_33.png" alt="">
+            <section class="text-wallpaper">
+                <section v-if="!isMobile" class="text-content">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-3-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>在实现极大运载能力的同时，引力3号可支持海上回收</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberThird')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+                <section v-else class="text-content-mobile">
+                    <h2 class="main-title-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#Orien-yinli-3-copy" />
+                        </svg>
+                    </h2>
+                    <div class="text-desc">
+                        <p>在实现极大运载能力的同时，引力3号可支持海上回收</p>
+                    </div>
+                    <div class="text-btn">
+                        <el-button plain @click="goToHash('productPage', 'numberThird')">
+                            了解更多
+                        </el-button>
+                    </div>
+                </section>
+            </section>
         </div>
         <div class="carouser-content">
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
                 :loop="true"
-                :autoplay-timeout="3000"
+                :autoplay-timeout="4000"
                 :autoplay="true"
                 :items="1"
                 :dots="false"
@@ -118,6 +214,96 @@ export default {
         .home-img {
             width: 100%;
             background-size: cover;
+        }
+    }
+
+    .img-container {
+        position: relative;
+        line-height: 1;
+
+        .wallpaper {
+            width: 100%;
+            background-size: cover;
+        }
+
+        .text-wallpaper {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            .text-content {
+                padding-left: 11%;
+                padding-right: 11%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                .main-title-icon {
+                    font-size: 12rem;
+                    color: #fff;
+                    margin-bottom: -2.8rem;
+                }
+
+                .text-desc {
+                    font-size: 1.2rem;
+                    color: #c9caca;
+                    line-height: 1.7rem;
+                }
+
+                .text-btn {
+                    padding-top: 3.5rem;
+
+                    /deep/.el-button {
+                        background-color: transparent;
+                        height: 3.8rem;
+                        width: 12.9rem;
+                        font-size: 1.3rem;
+                        color: #fff;
+                        border-width: 0.1rem;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .text-content-mobile {
+                padding-left: 15px;
+                padding-right: 15px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                .main-title-icon {
+                    font-size: 36px;
+                    color: #fff;
+                }
+
+                .text-desc {
+                    font-size: 12px;
+                    color: #c9caca;
+                    line-height: 17px;
+
+                    p {
+                        display: inline-block;
+                        width: 50%;
+                    }
+                }
+
+                .text-btn {
+                    padding-top: 20px;
+                    color: pink;
+                }
+            }
+
+            .text-align {
+                text-align: right;
+            }
         }
     }
 

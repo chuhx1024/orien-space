@@ -6,3 +6,8 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 .el-button {
     border-radius: 0;
 }
+
+.is-plain {
+    background-color: transparent;
+    color: #fff;
+}
