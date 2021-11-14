@@ -33,7 +33,7 @@
                 <el-col class="left-content-text" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <div class="text-group">
                         <h3 class="text-title">
-                            北京总部
+                            北京亦庄
                         </h3>
                         <p class="text-desc">
                             火箭研发中心
