@@ -19,6 +19,44 @@
                 发射服务，覆盖LEO、SSO等各类型轨道
             </p>
         </div>
+        <div class="img-content">
+            <img class="home-img" src="/img/service/service_0.jpg" alt="">
+            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+        </div>
+        <div class="img-content">
+            <img class="home-img" src="/img/service/service_1.jpg" alt="">
+            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+        </div>
+        <div class="img-content">
+            <img class="home-img" src="/img/service/service_2.jpg" alt="">
+            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+        </div>
+        <div class="img-content">
+            <img class="home-img" src="/img/service/service_3.jpg" alt="">
+            <div class="btn-left btn-right" @click="goToHash('productPage', 'numberSecond')" />
+        </div>
+        <div class="carouser-content">
+            <carousel
+                key="dfasdfasdf"
+                :nav="false"
+                :loop="true"
+                :autoplay-timeout="3000"
+                :autoplay="true"
+                :items="1"
+                :dots="false"
+            >
+                <div
+                    v-for="(item, index) in carouselData"
+                    :key="index"
+                    class="carouser-card"
+                >
+                    <img class="wallpaper" :src="item.url" alt="">
+                    <div class="carousel-title">
+                        {{ item.title }}
+                    </div>
+                </div>
+            </carousel>
+        </div>
     </section>
 </template>
 
@@ -28,6 +66,15 @@ import BannerComSmall from '../components/BannerComSmall.vue'
 export default {
     name: 'ServicePage',
     components: { BannerComSmall },
+    data () {
+        return {
+            carouselData: [
+                { title: '太空旅行', url: '/img/service/carouse_0.png' },
+                { title: '太空旅行', url: '/img/service/carouse_1.png' },
+                { title: '太空旅行', url: '/img/service/carouse_2.png' },
+            ],
+        }
+    },
     computed: {
         ...mapState('app', ['isMobile']),
     },
@@ -54,6 +101,63 @@ export default {
                 font-size: 1.7rem;
                 line-height: 3.2rem;
                 padding-bottom: 3.8rem;
+            }
+        }
+
+        .img-content {
+            position: relative;
+
+            .btn-left {
+                position: absolute;
+                top: 33%;
+                left: 7%;
+                width: 29%;
+                height: 34%;
+                // border: 1px solid #ccc;
+                cursor: pointer;
+            }
+
+            .btn-right {
+                left: 64%;
+                top: 30%;
+            }
+
+            .home-img {
+                width: 100%;
+                background-size: cover;
+            }
+        }
+
+        .carouser-content {
+            position: relative;
+            background-color: #000;
+            padding-bottom: 80px;
+
+            /deep/.owl-theme .owl-dots .owl-dot.active span, /deep/.owl-theme .owl-dots .owl-dot:hover span {
+                background: $--color-primary;
+            }
+
+            /deep/.owl-dots {
+                margin-top: 47px;
+            }
+
+            .wallpaper {
+                width: 100%;
+                background-size: cover;
+            }
+
+            .carousel-title {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 6.6rem;
             }
         }
     }
