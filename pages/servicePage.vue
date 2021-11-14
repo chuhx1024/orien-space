@@ -112,14 +112,12 @@ export default {
                 left: 7%;
                 width: 31%;
                 height: 50%;
-                border: 1px solid #ccc;
                 cursor: pointer;
             }
 
             .btn-right {
                 left: 64%;
                 top: 30%;
-                border: 1px solid #ccc;
             }
 
             .home-img {
