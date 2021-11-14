@@ -147,6 +147,7 @@ export default {
                 height: 214px;
                 overflow: hidden;
                 border: 1px solid #979797;
+                padding-bottom: 25px;
                 margin-bottom: 20px;
                 cursor: pointer;
 
@@ -166,7 +167,7 @@ export default {
 
                     .desc {
                         font-size: 16px;
-                        line-height: 20px;
+                        line-height: 23px;
                         overflow: hidden;
                         display: -webkit-box;
                         white-space: normal !important;
