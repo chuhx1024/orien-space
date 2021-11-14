@@ -120,6 +120,10 @@ export default {
         overflow: hidden;
 
         .news-nav {
+            /deep/.el-tabs__header {
+                padding: 20px 0;
+            }
+
             /deep/.el-tabs__nav-wrap::after {
                 background-color: #000;
             }
