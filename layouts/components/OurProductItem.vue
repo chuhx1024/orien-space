@@ -3,19 +3,19 @@
         <el-row>
             <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                 <div class="contentText" @click="hiddenWindow('productPage', 'numberFirst')">
-                    <el-menu-item index="productPage-1">
-                        引力 — 1号
-                    </el-menu-item>
+                    <!-- <el-menu-item index="productPage-1"> -->
+                    引力 — 1号
+                    <!-- </el-menu-item> -->
                 </div>
                 <div class="contentText" @click="hiddenWindow('productPage', 'numberSecond')">
-                    <el-menu-item index="productPage-2">
-                        引力 — 2号
-                    </el-menu-item>
+                    <!-- <el-menu-item index="productPage-2"> -->
+                    引力 — 2号
+                    <!-- </el-menu-item> -->
                 </div>
                 <div class="contentText" @click="hiddenWindow('productPage', 'numberThird')">
-                    <el-menu-item index="productPage-3">
-                        引力 — 2号
-                    </el-menu-item>
+                    <!-- <el-menu-item index="productPage-3"> -->
+                    引力 — 2号
+                    <!-- </el-menu-item> -->
                 </div>
             </el-col>
         </el-row>

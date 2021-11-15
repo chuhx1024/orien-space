@@ -20,7 +20,6 @@
                                     active-text-color="#009dda"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
-                                    :default-active="activeItem"
                                     :unique-opened="true"
                                     @select="selectHandle"
                                 >
@@ -37,7 +36,9 @@
                                     <el-submenu index="productPage">
                                         <template slot="title">
                                             <nuxt-link class="nav-item" to="productPage">
-                                                产品
+                                                <p ref="productBtn" @click="submenuHandle">
+                                                    产品
+                                                </p>
                                             </nuxt-link>
                                         </template>
                                         <our-product-item @closeItem="closeItem" />
@@ -121,6 +122,15 @@ export default {
                 behavior: 'smooth', // 平滑滚动
             })
         },
+        submenuHandle () {
+            const Node = document.querySelectorAll('li[role="menuitem"]')
+            Node.forEach((item) => {
+                item.style.borderBottomColor = 'transparent'
+                item.style.color = '#FFF'
+                item.classList.remove('is-active')
+            })
+            this.$refs.productBtn.style.color = '#009dda'
+        },
         selectHandle (index) {
             if (this.isMobile) {
                 this.showMenu = false
@@ -143,6 +153,19 @@ export default {
                     })
                 }
             }
+            const Node = document.querySelectorAll('li[role="menuitem"]')
+            const menuArr = ['homePage', 'servicePage', 'productPage', 'newsPage', 'joinPage', 'aboutPage']
+            Node.forEach((item, subIndex) => {
+                if (menuArr[subIndex] !== index) {
+                    item.style.borderBottomColor = 'transparent'
+                    item.style.color = '#FFF'
+                    item.classList.remove('is-active')
+                } else {
+                    item.classList.add('is-active')
+                    item.style.color = '#009dda'
+                }
+            })
+            this.$refs.productBtn.style.color = '#FFF'
         },
         getUrl () {
             const url = window.location.href
@@ -152,20 +175,23 @@ export default {
             return relUrl
         },
         toHomePage () {
+            this.$refs.productBtn.style.color = '#FFF'
             const Node = document.querySelectorAll('li[role="menuitem"]')
-            const Node2 = document.querySelectorAll('.el-submenu__title')
+            // const Node2 = document.querySelectorAll('.el-submenu__title')
             Node.forEach((item, index) => {
                 if (index !== 0) {
                     item.style.borderBottomColor = 'transparent'
                     item.style.color = '#FFF'
+                    item.classList.remove('is-active')
                 } else {
+                    item.classList.add('is-active')
                     item.style.color = '#009dda'
                 }
             })
-            Node2.forEach((item) => {
-                item.style.borderBottomColor = 'transparent'
-                item.style.color = '#009dda'
-            })
+            // Node2.forEach((item) => {
+            //     item.style.borderBottomColor = 'transparent'
+            //     item.style.color = '#009dda'
+            // })
             const url = this.getUrl()
             if (url === '/' || url === '/en/' || url === 'zh') {
                 window.scroll({
