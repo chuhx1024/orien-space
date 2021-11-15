@@ -68,7 +68,6 @@
                         </div>
                     </template>
                 </header>
-                <info-entry />
             </el-col>
         </el-row>
     </div>
@@ -77,7 +76,7 @@
 import { mapState } from 'vuex'
 import OurProductItem from './OurProductItem'
 export default {
-    name: 'CluHeader',
+    name: 'OriHeader',
     components: {
         OurProductItem,
     },

@@ -84,9 +84,9 @@
                             <div class="contact-group-item">
                                 商务合作 ：bd@orienspace.com
                             </div>
-                            <di class="contact-group-item">
+                            <div class="contact-group-item">
                                 媒体合作 ：pr@orienspace.com
-                            </di>
+                            </div>
                             <div class="contact-group-item">
                                 人才招聘 ：hr@orienspace.com
                             </div>
