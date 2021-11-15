@@ -89,6 +89,7 @@
             :id="item.id"
             :key="index"
             class="prower-container"
+            :class="{isMobile}"
         >
             <el-row class="type-page" :type="isMobile ? '' : 'flex'" justify="space-between">
                 <el-col class="left-content" :xs="24" :sm="24" :md="10" :lg="10" :xl="10">
@@ -116,10 +117,10 @@
                         <span class="fr">{{ spItem.num }}&nbsp;</span>
                     </p>
                     <div class="power-btn">
-                        <el-button plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约发射
                         </el-button>
-                        <el-button plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约观看
                         </el-button>
                     </div>
@@ -279,11 +280,6 @@ export default {
 
             .power-btn {
                 padding-top: 100px;
-
-                /deep/.el-button {
-                    background-color: transparent;
-                    color: #fff;
-                }
 
                 &:nth-child(1) {
                     margin-right: 42px;

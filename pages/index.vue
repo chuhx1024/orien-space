@@ -24,7 +24,7 @@
         <div class="img-container">
             <img class="wallpaper" src="/img/index/index_11.png" alt="">
             <section class="text-wallpaper">
-                <section v-if="!isMobile" class="text-content">
+                <section v-if="!isMobile" class="text-content type-page">
                     <h2 class="main-title-icon">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#Orien-yinli-1-copy" />
@@ -36,7 +36,7 @@
                         <p>号成为商业发射的极佳选择</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberFirst')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberFirst')">
                             了解更多
                         </el-button>
                     </div>
@@ -51,7 +51,7 @@
                         <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1号成为商业发射的极佳选择</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberFirst')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberFirst')">
                             了解更多
                         </el-button>
                     </div>
@@ -61,7 +61,7 @@
         <div class="img-container">
             <img class="wallpaper" src="/img/index/index_22.png" alt="">
             <section class="text-wallpaper">
-                <section v-if="!isMobile" class="text-content type-page text-align">
+                <section v-if="!isMobile" class="text-content type-page text-align-right">
                     <h2 class="main-title-icon">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#Orien-yinli-2-copy" />
@@ -72,12 +72,12 @@
                         <p>力2号满足更高轨道发射需求</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberSecond')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberSecond')">
                             了解更多
                         </el-button>
                     </div>
                 </section>
-                <section v-else class="text-content-mobile text-align">
+                <section v-else class="text-content-mobile text-align-right">
                     <h2 class="main-title-icon">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#Orien-yinli-2-copy" />
@@ -87,7 +87,7 @@
                         <p>率先实现将固体大推力助推器与液体芯级相结合的设计，使引力2号满足更高轨道发射需求</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberSecond')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberSecond')">
                             了解更多
                         </el-button>
                     </div>
@@ -107,7 +107,7 @@
                         <p>在实现极大运载能力的同时，引力3号可支持海上回收</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberThird')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberThird')">
                             了解更多
                         </el-button>
                     </div>
@@ -122,7 +122,7 @@
                         <p>在实现极大运载能力的同时，引力3号可支持海上回收</p>
                     </div>
                     <div class="text-btn">
-                        <el-button plain @click="goToHash('productPage', 'numberThird')">
+                        <el-button type="primary" plain @click="goToHash('productPage', 'numberThird')">
                             了解更多
                         </el-button>
                     </div>
@@ -235,8 +235,6 @@ export default {
             right: 0;
 
             .text-content {
-                padding-left: 11%;
-                padding-right: 11%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -257,15 +255,6 @@ export default {
 
                 .text-btn {
                     padding-top: 35px;
-
-                    /deep/.el-button {
-                        background-color: transparent;
-                        height: 38px;
-                        width: 129px;
-                        font-size: 16px;
-                        color: #fff;
-                        padding: 0;
-                    }
                 }
             }
 
@@ -300,7 +289,7 @@ export default {
                 }
             }
 
-            .text-align {
+            .text-align-right {
                 text-align: right;
             }
         }
