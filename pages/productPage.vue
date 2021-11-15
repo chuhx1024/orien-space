@@ -113,7 +113,7 @@
                         class="power-desc-item"
                     >
                         <span class="fl">{{ spItem.disc }}</span>
-                        <span class="fr">{{ spItem.unit }} </span>
+                        <span class="fr" style="color: #c9caca;">{{ spItem.unit }} </span>
                         <span class="fr">{{ spItem.num }}&nbsp;</span>
                     </p>
                     <div class="power-btn">
@@ -233,9 +233,9 @@ export default {
         }
 
         .icon-desc {
-            font-size: 13px;
+            font-size: 14px;
             color: #c9caca;
-            line-height: 18px;
+            line-height: 20px;
             padding-bottom: 20px;
         }
     }
@@ -261,8 +261,9 @@ export default {
             }
 
             .power-desc {
-                font-size: 12px;
-                line-height: 17px;
+                font-size: 14px;
+                line-height: 21px;
+                color: #c9caca;
             }
 
             .power-sub-title {

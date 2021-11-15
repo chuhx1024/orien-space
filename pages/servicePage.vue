@@ -68,7 +68,7 @@
             </section>
         </div>
         <div class="img-container">
-            <img class="wallpaper" src="/img/service/service_3.jpg" alt="">
+            <img class="wallpaper" src="/img/service/service_33.jpg" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page">
                     <div class="main-title">
