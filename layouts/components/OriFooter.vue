@@ -144,6 +144,7 @@ export default {
     background-color: #000;
     color: #c9caca;
     font-weight: 200;
+    overflow: hidden;
 
     .footer-line {
         border-top: 1px solid #f49e17;

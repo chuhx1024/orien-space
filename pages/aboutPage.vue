@@ -127,16 +127,17 @@
             <div class="partners-content">
                 <div class="partners-img type-page">
                     <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
-                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4">
-                            <img class="content-item" :class="{spImg: index === 4}" :src="`/img/about/${item}`" alt="">
+                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4" :style="{textAlign: index === 0 ? 'left': (index === partnersImg.length -1 ? 'right':'center'),}">
+                            <img class="content-item" :class="{first: index === 0, last: index === 5}" :src="`/img/about/${item}`" alt="">
                         </el-col>
                     </el-row>
                 </div>
                 <div class="partners-text type-page">
                     <el-row>
-                        <el-col v-for="item in partnersText" :key="item" :xs="8" :sm="8" :md="3" :lg="3" :xl="3">
-                            <div class="content-item">
-                                {{ item }}
+                        <el-col v-for="(item, index) in partnersText" :key="item" :xs="8" :sm="8" :md="3" :lg="3" :xl="3">
+                            <div class="content-item" :style="{textAlign: (index + 1) % 8 === 1 ? 'left': ((index + 1) % 8 ===0 ? 'right':'center'),}">
+                                <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
+                                <span v-else>{{ item }}</span>
                             </div>
                         </el-col>
                     </el-row>
@@ -224,7 +225,7 @@ export default {
                 'honour_0.jpg',
             ],
             partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_3.png', 'partners_4.jpeg', 'partners_5.jpeg'],
-            partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
+            partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', 'partners_6.jpeg', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
         }
     },
     computed: {
@@ -514,10 +515,8 @@ export default {
         .partners-content {
             .partners-img {
                 .content-item {
-                    width: 80px;
                     height: 38px;
                     padding-top: 30px;
-                    transform: translateX(40%);
                 }
 
                 // .spImg {
@@ -533,6 +532,10 @@ export default {
                     color: #fff;
                     line-height: 23px;
                     text-align: center;
+
+                    img {
+                        width: 73px;
+                    }
                 }
             }
         }
