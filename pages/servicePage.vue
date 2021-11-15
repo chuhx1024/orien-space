@@ -154,7 +154,7 @@ export default {
             .mark {
                 font-size: 1.7rem;
                 line-height: 3.2rem;
-                padding-bottom: 3.8rem;
+                padding-bottom: 1.9rem;
             }
         }
 
@@ -222,6 +222,7 @@ export default {
                     .sub-title {
                         font-size: 16px;
                         margin-bottom: 15px;
+                        color: #c9caca;
                     }
 
                     .time-text {
@@ -245,10 +246,10 @@ export default {
 
                     .text-desc-3 {
                         width: 450px;
-                        font-size: 13px;
+                        font-size: 16px;
                         color: #c9caca;
                         padding-top: 30px;
-                        line-height: 18px;
+                        line-height: 24px;
                     }
 
                     .text-btn {
