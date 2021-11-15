@@ -2,11 +2,11 @@
     <section class="service-page-container">
         <banner-com-small
             url-source="/img/service/service_banner.png"
-            main-title="Are you ready to go universe？"
+            main-title="你准备好出发去太空了吗？"
         >
-            <p class="big" style="color: #fff;">
+            <!-- <p class="big" style="color: #fff;">
                 你准备好出发去太空了吗？
-            </p>
+            </p> -->
         </banner-com-small>
         <div class="service-title" :class="{isMobile: isMobile}">
             <p class="desc">
@@ -20,10 +20,10 @@
             </p>
         </div>
         <div class="img-content">
-            <img class="home-img" src="/img/service/service_0.jpg" alt="">
+            <img class="home-img" src="/img/service/service_0.png" alt="">
         </div>
         <div class="img-container" style="background-color: #040a17; padding: 148px 0;">
-            <img class="wallpaper left" src="/img/service/service_11.jpg" border="1" alt="">
+            <img class="wallpaper left" src="/img/service/service_11.png" border="1" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page">
                     <div class="main-title-0">
@@ -161,6 +161,7 @@ export default {
 
         .img-content {
             .home-img {
+                background-color: #000;
                 width: 100%;
                 background-size: cover;
             }

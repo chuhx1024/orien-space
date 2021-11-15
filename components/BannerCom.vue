@@ -9,9 +9,11 @@
                 <slot />
             </div>
             <div v-if="bannerBtn" class="banner-btn">
-                <el-button type="primary">
-                    {{ bannerBtn }}
-                </el-button>
+                <a href="https://mp.weixin.qq.com/s/qc-Q7O8gfTly1WK57cIz4A" target="_blank">
+                    <el-button type="primary">
+                        {{ bannerBtn }}
+                    </el-button>
+                </a>
             </div>
         </section>
     </div>

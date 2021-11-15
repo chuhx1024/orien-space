@@ -103,7 +103,7 @@
                             </svg>
                             <div>
                                 <p class="code-title">
-                                    Breaker of commercial space
+                                    东方空间微信公众号
                                 </p>
                                 <p class="code-text">
                                     扫码关注我们，了解更多
