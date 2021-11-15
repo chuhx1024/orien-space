@@ -534,7 +534,7 @@ export default {
                     text-align: center;
 
                     img {
-                        width: 73px;
+                        width: 117px;
                     }
                 }
             }

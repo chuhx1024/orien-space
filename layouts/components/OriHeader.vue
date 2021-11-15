@@ -20,6 +20,7 @@
                                     active-text-color="#009dda"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
+                                    :default-active="activeItem"
                                     :unique-opened="true"
                                     @select="selectHandle"
                                 >
@@ -85,6 +86,7 @@ export default {
             logoSvg: { url: 'logo-light.svg', fit: 'contain' },
             showMenu: true,
             innerHeight: '',
+            activeItem: 'homePage',
         }
     },
 
