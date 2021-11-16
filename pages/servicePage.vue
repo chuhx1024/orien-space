@@ -23,7 +23,7 @@
             <img class="home-img" src="/img/service/service_0.png" alt="">
         </div>
         <div class="img-container" style="background-color: #040a17; padding: 148px 0;">
-            <img class="wallpaper left" src="/img/service/service_11.png" border="1" alt="">
+            <img class="wallpaper left" src="/img/service/service_11.png" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page">
                     <div class="main-title-0">
@@ -177,9 +177,7 @@ export default {
 
                 &.left {
                     width: 50%;
-                    transform: translateX(98%);
-                    border-style: dashed;
-                    border-color: #fff;
+                    transform: translateX(95%);
                 }
 
                 &.right {
