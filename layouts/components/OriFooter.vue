@@ -82,19 +82,19 @@
                         </svg>
                         <div class="contact-group">
                             <div class="contact-group-item">
-                                商务合作 ：bd@orienspace.com
+                                <span style="letter-spacing: 3.5px;">商务合作</span> ：bd@orienspace.com
                             </div>
                             <div class="contact-group-item">
-                                媒体合作 ：pr@orienspace.com
+                                <span style="letter-spacing: 3.5px;">媒体合作</span> ：pr@orienspace.com
                             </div>
                             <div class="contact-group-item">
-                                人才招聘 ：hr@orienspace.com
+                                <span style="letter-spacing: 3.5px;">人才招聘</span> ：hr@orienspace.com
                             </div>
                             <div class="contact-group-item">
-                                投融资合作：ir@orienspace.com
+                                投资者关系 ：ir@orienspace.com
                             </div>
                             <div class="contact-group-item">
-                                联系电话：010-67857929
+                                <span style="letter-spacing: 3.5px;">联系电话</span> ：010-67857929
                             </div>
                         </div>
                         <div class="QR-group">
@@ -179,9 +179,9 @@ export default {
 
             .contact-group {
                 padding-top: 30px;
-                font-size: 15px;
+                font-size: 14px;
                 color: #c9caca;
-                line-height: 20px;
+                line-height: 25px;
             }
 
             .QR-group {
@@ -212,7 +212,7 @@ export default {
         }
 
         .content-item {
-            padding-top: 50px;
+            padding-top: 62px;
 
             .item-title {
                 font-size: 14px;

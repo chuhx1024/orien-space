@@ -13,7 +13,7 @@
                         </p>
 
                         <p class="left-text">
-                            公司以现代化科技公司管理模式，严谨、敏捷、协作的精神，希望探索出全新的高效率航天技术发展范式。
+                            公司秉承现代化科技公司管理模式，严谨、敏捷、协作的精神，希望探索出全新的高效率航天技术发展范式。
                         </p>
                     </div>
                 </el-col>
@@ -152,22 +152,22 @@
                 <el-col class="left-content" :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
                     <div class="contact-group">
                         <div class="contact-group-item">
-                            公司地址 ：北京市大兴区亦庄地盛北街经开大厦B座
+                            <span style="letter-spacing: 4.3px;">公司地址</span> ：北京市大兴区亦庄地盛北街经开大厦B座
                         </div>
                         <div class="contact-group-item">
-                            商务合作 ：bd@orienspace.com
+                            <span style="letter-spacing: 4.3px;">商务合作</span> ：bd@orienspace.com
                         </div>
                         <div class="contact-group-item">
-                            媒体合作 ：pr@orienspace.com
+                            <span style="letter-spacing: 4.3px;">媒体合作</span> ：pr@orienspace.com
                         </div>
                         <div class="contact-group-item">
-                            人才招聘 ：hr@orienspace.com
+                            <span style="letter-spacing: 4.3px;">人才招聘</span> ：hr@orienspace.com
                         </div>
                         <div class="contact-group-item">
-                            投融资合作：ir@orienspace.com
+                            投资者关系 ：ir@orienspace.com
                         </div>
                         <div class="contact-group-item">
-                            联系电话：010-67857929
+                            <span style="letter-spacing: 4.3px;">联系电话</span> ：010-67857929
                         </div>
                     </div>
                 </el-col>

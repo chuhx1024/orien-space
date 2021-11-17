@@ -13,7 +13,7 @@
                 太空物流
             </p>
             <p class="mark">
-                使用“引力”系列运载火箭，打造系列化、多样化的空天运输产品，为您提供低成本、规模化、高效快捷的。
+                使用“引力”系列运载火箭，打造系列化、多样化的空天运输产品，为您提供低成本、规模化、高效快捷的
             </p>
             <p class="mark">
                 发射服务，覆盖LEO、SSO等各类型轨道
@@ -177,7 +177,7 @@ export default {
 
                 &.left {
                     width: 50%;
-                    transform: translateX(95%);
+                    transform: translateX(91%);
                 }
 
                 &.right {
@@ -232,7 +232,7 @@ export default {
                     }
 
                     .text-desc {
-                        width: 300px;
+                        width: 266px;
                         font-size: 16px;
                         color: #c9caca;
                         line-height: 24px;

@@ -1,5 +1,5 @@
 <template>
-    <div ref="ourTechItem" class="OurTechItem-container" :class="{isMobile}">
+    <div ref="productItem" class="ProductItem-container" :class="{isMobile}">
         <el-row>
             <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                 <div class="contentText" @click="hiddenWindow('productPage', 'numberFirst')">
@@ -26,14 +26,23 @@
 import { mapState } from 'vuex'
 import { goToHash } from '@/utiles/tool.js'
 export default {
-    name: 'OurTechItem',
+    name: 'ProductItem',
     computed: {
         ...mapState('app', ['isMobile']),
+    },
+    mounted () {
+        this.setMargin()
     },
     methods: {
         hiddenWindow (path, hash) {
             goToHash.call(this, path, hash)
             this.$emit('closeItem', 'ourTech')
+        },
+        // PC 端 修改位置
+        setMargin () {
+            if (!this.isMobile) {
+                this.$refs.productItem.parentNode.parentNode.style.marginLeft = '-21px'
+            }
         },
     },
 
@@ -41,7 +50,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-    .OurTechItem-container {
+    .ProductItem-container {
         background-color: #000;
         margin-top: -11px;
         font-size: 14px;
