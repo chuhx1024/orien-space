@@ -41,7 +41,7 @@ export default {
         // PC 端 修改位置
         setMargin () {
             if (!this.isMobile) {
-                this.$refs.productItem.parentNode.parentNode.style.marginLeft = '-21px'
+                this.$refs.productItem.parentNode.parentNode.style.marginLeft = '-12px'
             }
         },
     },
