@@ -126,21 +126,28 @@
             </div>
             <div class="partners-content">
                 <div class="partners-img type-page">
-                    <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
-                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4" :lg="4" :xl="4" :style="{textAlign: index === 0 ? 'left': (index === partnersImg.length -1 ? 'right':'center'),}">
+                    <!-- <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
+                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4.8" :lg="4.8" :xl="4.8" :style="{textAlign: index === 0 ? 'left': (index === partnersImg.length -1 ? 'right':'center'),}">
                             <img class="content-item" :class="{first: index === 0, last: index === 5}" :src="`/img/about/${item}`" alt="">
                         </el-col>
-                    </el-row>
+                    </el-row> -->
+                    <div v-for="item in partnersImg" :key="item" class="content-item">
+                        <img class="img" :src="`/img/about/${item}`" alt="">
+                    </div>
                 </div>
                 <div class="partners-text type-page">
-                    <el-row>
+                    <!-- <el-row>
                         <el-col v-for="(item, index) in partnersText" :key="item" :xs="8" :sm="8" :md="3" :lg="3" :xl="3">
                             <div class="content-item" :style="{textAlign: (index + 1) % 8 === 1 ? 'left': ((index + 1) % 8 ===0 ? 'right':'center'),}">
                                 <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
                                 <span v-else>{{ item }}</span>
                             </div>
                         </el-col>
-                    </el-row>
+                    </el-row> -->
+                    <div v-for="item in partnersText" :key="item" class="content-item">
+                        <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
+                        <span v-else>{{ item }}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,8 +231,27 @@ export default {
                 'honour_0.jpg',
                 'honour_0.jpg',
             ],
-            partnersImg: ['partners_0.jpeg', 'partners_1.jpeg', 'partners_2.jpeg', 'partners_3.png', 'partners_4.jpeg', 'partners_5.jpeg'],
-            partnersText: ['经纬中国', '红杉中国', '三一重工', '三江资本', '无限启航', '张学政', '海阳宇航产业投资', 'partners_6.jpeg', '真格基金', '蓝色空间', '图灵创投', '天地网络', '众海投资', '王国斌', '赛博朋克奇点', '联想之星'],
+            partnersImg: [
+                'partners_0.jpeg',
+                'partners_1.jpeg',
+                'partners_2.jpeg',
+                'partners_3.jpeg',
+                'partners_4.jpeg',
+                'partners_5.jpeg',
+                'partners_6.jpeg',
+                'partners_7.jpeg',
+                'partners_8.jpeg',
+                'partners_9.jpeg',
+            ],
+            partnersText: [
+                '赛博朋克奇点',
+                '蓝色空间',
+                '三江资本',
+                '无限启航',
+                '王国斌',
+                '张学政',
+                'partners_100.jpeg',
+            ],
         }
     },
     computed: {
@@ -514,27 +540,56 @@ export default {
 
         .partners-content {
             .partners-img {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
                 .content-item {
+                    width: 24%;
                     height: 38px;
                     padding-top: 30px;
-                }
+                    text-align: center;
 
-                // .spImg {
-                //     width: 53px;
-                //     transform: translateX(90%);
-                // }
+                    &:nth-child(5n + 1) {
+                        text-align: left;
+                        width: 14%;
+                    }
+
+                    &:nth-child(5n + 5) {
+                        text-align: right;
+                        width: 14%;
+                    }
+
+                    .img {
+                        height: 38px;
+                    }
+                }
             }
 
             .partners-text {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
                 .content-item {
-                    padding-top: 45px;
+                    width: 14.3%;
+                    padding-top: 30px;
                     font-size: 17px;
                     color: #fff;
-                    line-height: 23px;
+                    height: 50px;
+                    line-height: 50px;
                     text-align: center;
 
+                    &:nth-child(7n + 1) {
+                        text-align: left;
+                    }
+
+                    &:nth-child(7n + 7) {
+                        width: 14%;
+                    }
+
                     img {
-                        width: 117px;
+                        width: 35px;
                     }
                 }
             }
