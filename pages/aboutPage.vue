@@ -120,30 +120,17 @@
                 </template>
             </div>
         </div> -->
-        <div class="about-partners" :class="{isMobile: isMobile}">
+        <div class="about-partners" :class="{isMobile}">
             <div class="partners-title">
                 投资者关系
             </div>
             <div class="partners-content">
                 <div class="partners-img type-page">
-                    <!-- <el-row type="flex" align="middle" justify="center" style="flex-wrap: wrap;">
-                        <el-col v-for="(item, index) in partnersImg" :key="item" :xs="8" :sm="8" :md="4.8" :lg="4.8" :xl="4.8" :style="{textAlign: index === 0 ? 'left': (index === partnersImg.length -1 ? 'right':'center'),}">
-                            <img class="content-item" :class="{first: index === 0, last: index === 5}" :src="`/img/about/${item}`" alt="">
-                        </el-col>
-                    </el-row> -->
                     <div v-for="item in partnersImg" :key="item" class="content-item">
                         <img class="img" :src="`/img/about/${item}`" alt="">
                     </div>
                 </div>
                 <div class="partners-text type-page">
-                    <!-- <el-row>
-                        <el-col v-for="(item, index) in partnersText" :key="item" :xs="8" :sm="8" :md="3" :lg="3" :xl="3">
-                            <div class="content-item" :style="{textAlign: (index + 1) % 8 === 1 ? 'left': ((index + 1) % 8 ===0 ? 'right':'center'),}">
-                                <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
-                                <span v-else>{{ item }}</span>
-                            </div>
-                        </el-col>
-                    </el-row> -->
                     <div v-for="item in partnersText" :key="item" class="content-item">
                         <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
                         <span v-else>{{ item }}</span>
