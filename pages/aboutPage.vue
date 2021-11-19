@@ -514,6 +514,7 @@ export default {
     .about-partners {
         background-color: #000;
         padding-bottom: 150px;
+        overflow: hidden;
 
         .partners-title {
             text-align: center;

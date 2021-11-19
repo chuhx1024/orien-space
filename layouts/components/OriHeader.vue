@@ -17,7 +17,7 @@
                                     ref="myMenu"
                                     :background-color="isMobile ? '#000' : 'transparent'"
                                     text-color="#fff"
-                                    active-text-color="#009dda"
+                                    active-text-color="#f49e17"
                                     :mode="isMobile ? 'vertical' : 'horizontal'"
                                     menu-trigger="hover"
                                     :unique-opened="true"
@@ -356,7 +356,7 @@ export default {
             cursor: pointer;
 
             .logo-img {
-                transform: scale(1.5) translateX(14px);
+                transform: scale(1.5) translateX(10px);
                 height: 28px;
                 font-size: 90px;
             }
