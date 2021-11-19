@@ -89,11 +89,11 @@
             </section>
         </div>
         <div class="carouser-content">
-            <!-- :smart-speed="1500" -->
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
                 :loop="true"
+                :smart-speed="1500"
                 :autoplay-timeout="4000"
                 :autoplay="true"
                 :items="1"

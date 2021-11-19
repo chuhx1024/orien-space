@@ -134,6 +134,7 @@
                 key="dfasdfasdf"
                 :nav="false"
                 :loop="true"
+                :smart-speed="1500"
                 :autoplay-timeout="4000"
                 :autoplay="true"
                 :items="1"
