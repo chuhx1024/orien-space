@@ -6,7 +6,7 @@
             banner-btn="了解更多"
         >
             <p class="big">
-                由经纬、红杉领投
+                由经纬中国、红杉中国领投
             </p>
             <p class="big">
                 三一集团、天赋资本、三江资本、SEE Fund等知名基金跟投
@@ -32,7 +32,7 @@
                     </h2>
                     <div class="text-desc">
                         <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对</p>
-                        <p>多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1</p>
+                        <p>多种发射场景海陆兼容的设计，持续提升服务能力，使引力1</p>
                         <p>号成为商业发射的极佳选择</p>
                     </div>
                     <div class="text-btn">
@@ -48,7 +48,7 @@
                         </svg>
                     </h2>
                     <div class="text-desc">
-                        <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1号成为商业发射的极佳选择</p>
+                        <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力1号成为商业发射的极佳选择</p>
                     </div>
                     <div class="text-btn">
                         <el-button type="primary" plain @click="goToHash('productPage', 'numberFirst')">
@@ -68,8 +68,8 @@
                         </svg>
                     </h2>
                     <div class="text-desc">
-                        <p>率先实现将固体大推力助推器与液体芯级相结合的设计，使引</p>
-                        <p>力2号满足更高轨道发射需求</p>
+                        <p>实现将固体大推力助推器与液体芯级相结合设计，使引力2号满足更</p>
+                        <p>高轨道发射需求，实现部分回收，重复使用。</p>
                     </div>
                     <div class="text-btn">
                         <el-button type="primary" plain @click="goToHash('productPage', 'numberSecond')">
@@ -84,7 +84,7 @@
                         </svg>
                     </h2>
                     <div class="text-desc">
-                        <p>率先实现将固体大推力助推器与液体芯级相结合的设计，使引力2号满足更高轨道发射需求</p>
+                        <p>实现将固体大推力助推器与液体芯级相结合设计，使引力2号满足更高轨道发射需求，实现部分回收，重复使用。</p>
                     </div>
                     <div class="text-btn">
                         <el-button type="primary" plain @click="goToHash('productPage', 'numberSecond')">

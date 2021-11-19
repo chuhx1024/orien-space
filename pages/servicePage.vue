@@ -57,7 +57,7 @@
                         你想与我们一起迈向太空吗？
                     </div>
                     <div class="text-desc-3">
-                        尊敬的企业及个人客人：我们的箭体可提供整体/分部品牌广告合作及其他营销服务，请您联系我们洽谈具体方案
+                        尊敬的企业及个人客户：我们的发射服务可提供整体/分部品牌广告合作及其他营销服务，请您联系我们洽谈具体方案。
                     </div>
                     <div class="text-btn">
                         <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">

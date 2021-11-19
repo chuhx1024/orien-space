@@ -24,7 +24,7 @@
         </div>
         <div class="about-market" :class="{isMobile: isMobile}">
             <div class="market-title">
-                市场结构
+                公司布局
             </div>
             <el-row class="type-page market-content" type="flex" style="flex-wrap: wrap;">
                 <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
@@ -189,17 +189,18 @@ export default {
                 events: [
                     { theTime: '2021.09', theEvent: '西安子公司东方空间（西安）宇航技术有限公司正式成立。' },
                     { theTime: '2021.06', theEvent: '东方空间注册资本由2000万元增资至2亿元。' },
+                    { theTime: '2021.06', theEvent: '完成4亿元天使轮系列融资。' },
                     { theTime: '2021.05', theEvent: '东方空间党支部成立。' },
-                    { theTime: '2021.05', theEvent: 'YL-1运载火箭项目完成方案论证评审工作，各分系统正式转入方案设计阶段。' },
-                    { theTime: '2021.04', theEvent: '完成4亿元天使轮系列融资。' },
+                    { theTime: '2021.05', theEvent: '引力1号运载火箭项目完成方案论证评审工作，各分系统正式转入方案设计阶段。' },
+                    { theTime: '2021.01', theEvent: '东方空间与上海垣信卫星科技有限公司完成了发射意向协议签署。' },
                 ],
             },
             {
                 theYear: '2020年',
                 events: [
                     { theTime: '2020.12', theEvent: '在山东省海阳市与中国电科天地办/天地信息网络有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
-                    { theTime: '2020.11', theEvent: '与长光卫星技术有限公司举行了战略合作协议和发射意向协议签约仪式。' },
-                    { theTime: '2020.11', theEvent: '与北京最终前沿深空科技有限公司举行了战略合作框架协议和发射服务意向协议签约仪式。' },
+                    { theTime: '2020.11', theEvent: '东方空间与北京最终前沿深空科技有限公司完成了战略合作框架协议和发射服务意向协议签署。' },
+                    { theTime: '2020.11', theEvent: '东方空间与长光卫星技术有限公司完成了战略合作协议和发射意向协议签署。' },
                     { theTime: '2020.09', theEvent: '北京分公司完成工商注册正式成立。北京分公司定位为山东宇航北京研发中心，主要开展火箭、卫星等项目的技术开发和市场开发工作。' },
                     { theTime: '2020.07', theEvent: '完成首轮融资，融资金额5000万元。' },
                     { theTime: '2020.06', theEvent: '公司正式成立。' },
