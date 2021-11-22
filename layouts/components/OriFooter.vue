@@ -12,7 +12,7 @@
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
+                        <h3 class="item-title" @click="goToNext('/servicePage')">
                             服务
                         </h3>
                         <el-row v-if="!isMobile" class="item-group">
@@ -47,21 +47,21 @@
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
-                            新闻
+                        <h3 class="item-title" @click="goToNext('/newsPage')">
+                            新闻动态
                         </h3>
                     </div>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
+                        <h3 class="item-title" @click="goToNext('/joinPage')">
                             加入我们
                         </h3>
                     </div>
                 </el-col>
                 <el-col :xs="24" :sm="24" :md="4" :lg="4" :xl="4">
                     <div class="content-item">
-                        <h3 class="item-title" @click="goToNext('productService/guardianDock/privacyDataSystem')">
+                        <h3 class="item-title" @click="goToNext('/aboutPage')">
                             关于我们
                         </h3>
                         <el-row v-if="!isMobile" class="item-group">
@@ -98,9 +98,7 @@
                             </div>
                         </div>
                         <div class="QR-group">
-                            <svg class="icon QR-code" aria-hidden="true">
-                                <use xlink:href="#Orien-erweima" />
-                            </svg>
+                            <img class="QR-code" src="/img/QR_code.png" alt="">
                             <div>
                                 <p class="code-title">
                                     东方空间微信公众号
