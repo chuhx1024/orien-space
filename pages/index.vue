@@ -22,7 +22,7 @@
             </p>
         </div>
         <div class="img-container">
-            <img class="wallpaper" src="/img/index/index_11.png" alt="">
+            <img class="wallpaper" src="/img/index/index_11.jpg" alt="">
             <section class="text-wallpaper">
                 <section v-if="!isMobile" class="text-content type-page">
                     <h2 class="main-title-icon">
@@ -59,7 +59,7 @@
             </section>
         </div>
         <div class="img-container">
-            <img class="wallpaper" src="/img/index/index_22.png" alt="">
+            <img class="wallpaper" src="/img/index/index_22.jpg" alt="">
             <section class="text-wallpaper">
                 <section v-if="!isMobile" class="text-content type-page text-align-right">
                     <h2 class="main-title-icon">
@@ -95,7 +95,7 @@
             </section>
         </div>
         <div class="img-container">
-            <img class="wallpaper" src="/img/index/index_33.png" alt="">
+            <img class="wallpaper" src="/img/index/index_33.jpg" alt="">
             <section class="text-wallpaper">
                 <section v-if="!isMobile" class="text-content type-page">
                     <h2 class="main-title-icon">

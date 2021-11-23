@@ -126,7 +126,7 @@
                     </div>
                 </el-col>
                 <el-col class="right-content" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                    <img class="right-content-img" :src="`/img/product/number_${index}.png`" alt="">
+                    <img class="right-content-img" :src="`/img/product/number_${index}.jpg`" alt="">
                 </el-col>
             </el-row>
         </div>

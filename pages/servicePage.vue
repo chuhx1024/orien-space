@@ -1,7 +1,7 @@
 <template>
     <section class="service-page-container">
         <banner-com-small
-            url-source="/img/service/service_banner.png"
+            url-source="/img/service/service_banner.jpg"
             main-title="你准备好出发去太空了吗？"
         >
             <!-- <p class="big" style="color: #fff;">
@@ -20,10 +20,10 @@
             </p>
         </div>
         <div class="img-content">
-            <img class="home-img" src="/img/service/service_0.png" alt="">
+            <img class="home-img" src="/img/service/service_0.jpg" alt="">
         </div>
         <div class="img-container" style="background-color: #040a17; padding: 148px 0;">
-            <img class="wallpaper left" src="/img/service/service_11.png" alt="">
+            <img class="wallpaper left" src="/img/service/service_1.png" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page">
                     <div class="main-title-0">
@@ -124,9 +124,9 @@ export default {
     data () {
         return {
             carouselData: [
-                { title: '太空旅行', url: '/img/service/carouse_0.png' },
-                { title: '太空旅行', url: '/img/service/carouse_1.png' },
-                { title: '太空旅行', url: '/img/service/carouse_2.png' },
+                { title: '太空旅行', url: '/img/service/carouse_0.jpg' },
+                { title: '太空旅行', url: '/img/service/carouse_1.jpg' },
+                { title: '太空旅行', url: '/img/service/carouse_2.jpg' },
             ],
         }
     },
