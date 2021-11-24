@@ -18,6 +18,9 @@
             <p class="mark">
                 发射服务，覆盖LEO、SSO等各类型轨道
             </p>
+            <p class="mark">
+                全球一小时抵达
+            </p>
         </div>
         <div class="img-content">
             <img class="home-img" src="/img/service/service_0.jpg" alt="">
@@ -30,7 +33,7 @@
                         使命必达
                     </div>
                     <div class="text-desc">
-                        通过多级助推，将载荷准确送至太空预定轨道
+                        通过多样化构型，将各类载荷准确送至太空预定轨道
                     </div>
                     <div class="main-title-1">
                         灵活发射

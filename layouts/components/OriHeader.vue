@@ -5,8 +5,8 @@
                 <header class="clu-header-container type-page">
                     <h1 class="logo" @click="toHomePage">
                         <svg class="icon logo-img" aria-hidden="true">
-                            <use xlink:href="#Orien-LOGO" />
-                            <!-- <use xlink:href="#Orien-xingyunlogo" /> -->
+                            <!-- <use xlink:href="#Orien-LOGO" /> -->
+                            <use xlink:href="#Orien-xingyunlogo" />
                         </svg>
                     </h1>
                     <el-collapse-transition>
