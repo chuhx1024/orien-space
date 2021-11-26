@@ -17,10 +17,18 @@
                         </h3>
                         <el-row v-if="!isMobile" class="item-group">
                             <el-col class="group-grid" :span="24">
-                                <div>太空物流</div>
-                                <div>商业合作</div>
-                                <div>观众邀请</div>
-                                <div>太空探索</div>
+                                <div @click="goToHash('servicePage', 'serviceTitle')">
+                                    太空物流
+                                </div>
+                                <div @click="goToHash('servicePage', 'serviceCoop')">
+                                    商业合作
+                                </div>
+                                <div @click="goToHash('servicePage', 'serviceInvite')">
+                                    观众邀请
+                                </div>
+                                <div @click="goToHash('servicePage', 'serviceTravel')">
+                                    太空探索
+                                </div>
                             </el-col>
                         </el-row>
                     </div>
@@ -66,10 +74,18 @@
                         </h3>
                         <el-row v-if="!isMobile" class="item-group">
                             <el-col class="group-grid" :span="24">
-                                <div>发展历程</div>
-                                <div>资质荣誉</div>
-                                <div>投资方</div>
-                                <div>联系我们</div>
+                                <div @click="goToHash('aboutPage', 'aboutTimeline')">
+                                    发展历程
+                                </div>
+                                <!-- <div @click="goToHash('aboutPage', 'serviceTravel')">
+                                    资质荣誉
+                                </div> -->
+                                <div @click="goToHash('aboutPage', 'aboutPartners')">
+                                    投资方
+                                </div>
+                                <div @click="goToHash('aboutPage', 'aboutContact')">
+                                    联系我们
+                                </div>
                             </el-col>
                         </el-row>
                     </div>

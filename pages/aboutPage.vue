@@ -58,7 +58,7 @@
                 </el-col>
             </el-row>
         </div>
-        <div class="about-timeline" :class="{isMobile: isMobile}">
+        <div id="aboutTimeline" class="about-timeline" :class="{isMobile: isMobile}">
             <div class="time-line-title">
                 发展历程
             </div>
@@ -120,7 +120,7 @@
                 </template>
             </div>
         </div> -->
-        <div class="about-partners" :class="{isMobile}">
+        <div id="aboutPartners" class="about-partners" :class="{isMobile}">
             <div class="partners-title">
                 投资者关系
             </div>
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-contact" :class="{isMobile: isMobile}">
+        <div id="aboutContact" class="about-contact" :class="{isMobile: isMobile}">
             <div class="contact-title">
                 联系我们
             </div>

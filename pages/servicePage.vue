@@ -8,7 +8,7 @@
                 你准备好出发去太空了吗？
             </p> -->
         </banner-com-small>
-        <div class="service-title" :class="{isMobile: isMobile}">
+        <div id="serviceTitle" class="service-title" :class="{isMobile: isMobile}">
             <p class="desc">
                 太空物流
             </p>
@@ -49,7 +49,7 @@
                 </section>
             </section>
         </div>
-        <div class="img-container" style="background-color: #000; padding: 45px 0;">
+        <div id="serviceCoop" class="img-container" style="background-color: #000; padding: 45px 0;">
             <img class="wallpaper right" src="/img/service/service_22.gif" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page text-align-right">
@@ -70,7 +70,7 @@
                 </section>
             </section>
         </div>
-        <div class="img-container">
+        <div id="serviceInvite" class="img-container">
             <img class="wallpaper" src="/img/service/service_33.jpg" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page">
@@ -91,7 +91,7 @@
                 </section>
             </section>
         </div>
-        <div class="carouser-content">
+        <div id="serviceTravel" class="carouser-content">
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
