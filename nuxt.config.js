@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'orien-space',
+        title: '东方空间',
         htmlAttrs: {
             lang: 'en',
         },

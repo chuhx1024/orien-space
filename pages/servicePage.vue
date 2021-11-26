@@ -13,13 +13,13 @@
                 太空物流
             </p>
             <p class="mark">
+                全球一小时抵达
+            </p>
+            <p class="mark-0">
                 使用“引力”系列运载火箭，打造系列化、多样化的空天运输产品，为您提供低成本、规模化、高效快捷的
             </p>
-            <p class="mark">
+            <p class="mark-0">
                 发射服务，覆盖LEO、SSO、GTO、GEO等各类型轨道
-            </p>
-            <p class="mark">
-                全球一小时抵达
             </p>
         </div>
         <div class="img-content">
@@ -50,7 +50,7 @@
             </section>
         </div>
         <div class="img-container" style="background-color: #000; padding: 45px 0;">
-            <img class="wallpaper right" src="/img/service/service_22.jpg" alt="">
+            <img class="wallpaper right" src="/img/service/service_22.gif" alt="">
             <section class="text-wallpaper">
                 <section class="text-content type-page text-align-right">
                     <div class="main-title-0">
@@ -75,7 +75,7 @@
             <section class="text-wallpaper">
                 <section class="text-content type-page">
                     <div class="main-title">
-                        想要近距离观看发射火箭?
+                        想要近距离观看发射火箭吗?
                     </div>
                     <div class="sub-title">
                         引力-1号 发射倒计时
@@ -157,7 +157,15 @@ export default {
 
             .mark {
                 font-size: 1.7rem;
+                font-weight: 500;
                 line-height: 3.2rem;
+                padding-bottom: 1.9rem;
+            }
+
+            .mark-0 {
+                font-size: 1.7rem;
+                line-height: 1.6rem;
+                font-weight: 300;
                 padding-bottom: 1.9rem;
             }
         }
@@ -184,8 +192,8 @@ export default {
                 }
 
                 &.right {
-                    width: 50%;
-                    transform: translateX(20%);
+                    width: 15%;
+                    transform: translateX(100%);
                 }
             }
 

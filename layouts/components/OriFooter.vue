@@ -69,7 +69,7 @@
                                 <div>发展历程</div>
                                 <div>资质荣誉</div>
                                 <div>投资方</div>
-                                <div>社会责任</div>
+                                <div>联系我们</div>
                             </el-col>
                         </el-row>
                     </div>

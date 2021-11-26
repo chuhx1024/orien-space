@@ -10,25 +10,12 @@
         </banner-com>
         <light-beam />
         <div class="product-desc type-page">
-            <template v-if="isMobile">
-                <p class="product-desc-first">
-                    打造从一次性使用到可回收重复使用和载人飞行等系列化、多样化的空天运输产品，快速形成低成本、 规模化、高效快捷的发射服务能力，覆盖LEO、SSO等各类型轨道。
-                </p>
-                <p class="product-desc-second">
-                    将在短期内达到一流的航天发射水平，中期实现载人飞行商业化，长期规划实现近地行星探索商业化。
-                </p>
-            </template>
-            <template v-else>
-                <p class="product-desc-first">
-                    打造从一次性使用到可回收重复使用和载人飞行等系列化、多样化的空天运输产品，快速形成低成本、
-                </p>
-                <p class="product-desc-first">
-                    规模化、高效快捷的发射服务能力，覆盖LEO、SSO、GTO、GEO等各类型轨道。
-                </p>
-                <p class="product-desc-second">
-                    将在短期内达到一流的航天发射水平，中期实现载人飞行商业化，长期规划实现近地行星探索商业化。
-                </p>
-            </template>
+            <p class="product-desc-first">
+                东方空间通过“引力”系列运载火箭的研发，打造一次性使用、可回收重复使用和载人飞行等系列化、多样化的空天运输产品，快速形成低成本、规模化、高效快捷的发射服务能力，覆盖LEO、SSO、GTO、GEO等各类轨道。
+            </p>
+            <p class="product-desc-second">
+                将在短期内达到一流的航天发射水平，中期实现载人飞行商业化，长期规划实现近地行星探索商业化。
+            </p>
         </div>
         <el-row class="product-icon type-page">
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
@@ -114,7 +101,8 @@
                     >
                         <span class="fl">{{ spItem.disc }}</span>
                         <span class="fr" style="color: #c9caca;">{{ spItem.unit }} </span>
-                        <span class="fr">{{ spItem.num }}&nbsp;</span>
+                        <span class="fr">&nbsp;</span>
+                        <span class="fr" v-html="spItem.num" />
                     </p>
                     <div class="power-btn">
                         <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
@@ -150,7 +138,7 @@ export default {
                     disc: '创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力-1号成为商业发射的极佳选择',
                     item: [
                         { disc: '高度', num: 31, unit: '米' },
-                        { disc: '整流罩直径', num: '3.8 / 4.2', unit: '米' },
+                        { disc: '整流罩直径', num: '3.8 <span style="color: #c9caca;">米</span> / 4.2', unit: '米' },
                         { disc: '起飞重量', num: 420, unit: '吨' },
                         { disc: '起飞推力', num: 600, unit: '吨' },
                         { disc: '运载能力-近地轨道', num: 6.5, unit: '吨' },
@@ -160,12 +148,12 @@ export default {
                 {
                     id: 'numberSecond',
                     icon: 'Orien-yinli-2',
-                    disc: '率先实现将固体大推力助推器与液体芯级相结合的设计，使引力2号满足更高轨道发射需求',
+                    disc: '实现将固体大推力助推器与液体芯级相结合设计，使引力2号满足更高轨道发射需求，实现部分回收，重复使用。',
                     item: [
                         { disc: '高度', num: 52, unit: '米' },
-                        { disc: '整流罩直径', num: '4.2 / 5', unit: '米' },
+                        { disc: '整流罩直径', num: '4.2 <span style="color: #c9caca;">米</span> / 5', unit: '米' },
                         { disc: '起飞重量', num: 690, unit: '吨' },
-                        { disc: '起飞推力', num: 'X00', unit: '吨' },
+                        { disc: '起飞推力', num: 900, unit: '吨' },
                         { disc: '运载能力-近地轨道', num: 15, unit: '吨' },
                         { disc: '运载能力-太阳同步轨道', num: 8, unit: '吨' },
                         { disc: '运载能力-地球同步转移轨道', num: 4, unit: '吨' },
@@ -177,9 +165,9 @@ export default {
                     disc: '在实现极大运载能力的同时，引力3号可支持海上回收',
                     item: [
                         { disc: '高度', num: 52, unit: '米' },
-                        { disc: '整流罩直径', num: '4.2 / 5', unit: '米' },
+                        { disc: '整流罩直径', num: '4.2 <span style="color: #c9caca;">米</span> / 5', unit: '米' },
                         { disc: '起飞重量', num: 1100, unit: '吨' },
-                        { disc: '起飞推力', num: 'X00', unit: '吨' },
+                        { disc: '起飞推力', num: 1450, unit: '吨' },
                         { disc: '运载能力-近地轨道', num: 15, unit: '吨' },
                         { disc: '运载能力-太阳同步轨道', num: 15, unit: '吨' },
                         { disc: '运载能力-地球同步转移轨道', num: 7, unit: '吨' },
