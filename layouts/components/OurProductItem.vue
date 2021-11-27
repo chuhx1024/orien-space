@@ -14,7 +14,7 @@
                 </div>
                 <div class="contentText" @click="hiddenWindow('productPage', 'numberThird')">
                     <el-menu-item index="/productPage-2">
-                        引力 — 2号
+                        引力 — 3号
                     </el-menu-item>
                 </div>
             </el-col>
