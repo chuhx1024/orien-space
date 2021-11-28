@@ -58,7 +58,7 @@
                 </el-col>
             </el-row>
         </div>
-        <div id="aboutTimeline" class="about-timeline" :class="{isMobile: isMobile}">
+        <div id="aboutTimeline" class="about-timeline" :class="{isMobile}">
             <div class="time-line-title">
                 发展历程
             </div>
@@ -124,7 +124,34 @@
             <div class="partners-title">
                 投资者关系
             </div>
-            <div class="partners-content">
+            <div v-if="isMobile" class="partners-content">
+                <carousel
+                    key="dfasdfasdf0"
+                    :nav="false"
+                    :loop="true"
+                    :smart-speed="1500"
+                    :autoplay-timeout="4000"
+                    :autoplay="true"
+                    :items="1"
+                >
+                    <div class="partners-img type-page">
+                        <div v-for="item in partnersImgMobile" :key="item" class="content-item">
+                            <img class="img" :src="`/img/about/${item}`" alt="">
+                        </div>
+                    </div>
+                    <div class="partners-text type-page">
+                        <div class="content-item-img">
+                            <img class="img" src="/img/about/partners_9.jpeg" alt="">
+                            <img class="img" src="/img/about/partners_100.jpeg" alt="">
+                        </div>
+                        <div v-for="item in partnersTextMobile" :key="item" class="content-item">
+                            <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
+                            <span v-else>{{ item }}</span>
+                        </div>
+                    </div>
+                </carousel>
+            </div>
+            <div v-else class="partners-content">
                 <div class="partners-img type-page">
                     <div v-for="item in partnersImg" :key="item" class="content-item">
                         <img class="img" :src="`/img/about/${item}`" alt="">
@@ -229,6 +256,17 @@ export default {
                 'partners_8.jpeg',
                 'partners_9.jpeg',
             ],
+            partnersImgMobile: [
+                'partners_0.jpeg',
+                'partners_1.jpeg',
+                'partners_2.jpeg',
+                'partners_3.jpeg',
+                'partners_4.jpeg',
+                'partners_5.jpeg',
+                'partners_6.jpeg',
+                'partners_7.jpeg',
+                'partners_8.jpeg',
+            ],
             partnersText: [
                 '赛博朋克奇点',
                 '蓝色空间',
@@ -237,6 +275,14 @@ export default {
                 '王国斌',
                 '张学政',
                 'partners_100.jpeg',
+            ],
+            partnersTextMobile: [
+                '赛博朋克奇点',
+                '蓝色空间',
+                '三江资本',
+                '无限启航',
+                '王国斌',
+                '张学政',
             ],
         }
     },
@@ -471,6 +517,7 @@ export default {
 
                     p {
                         line-height: 20px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -600,8 +647,8 @@ export default {
                     flex-wrap: wrap;
 
                     .content-item {
-                        width: 30%;
-                        height: 38px;
+                        width: 33.3%;
+                        height: auto;
                         padding-top: 30px;
                         text-align: center;
 
@@ -615,13 +662,22 @@ export default {
                             width: 30%;
                         }
 
-                        &:last-child {
-                            text-align: center;
-                            width: 100%;
+                        &:nth-child(2) {
+                            height: 50px;
+
+                            .img {
+                                display: inline-block;
+                                height: 50px;
+                                width: 79px;
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            padding-top: 45px;
                         }
 
                         .img {
-                            height: 38px;
+                            height: auto;
                         }
                     }
                 }
@@ -631,28 +687,35 @@ export default {
                     justify-content: space-between;
                     flex-wrap: wrap;
 
+                    .content-item-img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        img {
+                            width: 55%;
+
+                            &:nth-child(2) {
+                                width: 20%;
+                            }
+                        }
+                    }
+
                     .content-item {
-                        width: 14.3%;
+                        width: 33.3%;
                         padding-top: 30px;
                         font-size: 17px;
                         color: #fff;
-                        height: 50px;
-                        line-height: 50px;
+                        height: 30px;
+                        line-height: 30px;
                         text-align: center;
-
-                        &:nth-child(7n + 1) {
-                            text-align: left;
-                        }
-
-                        &:nth-child(7n + 7) {
-                            width: 14%;
-                        }
-
-                        img {
-                            width: 35px;
-                        }
                     }
                 }
+            }
+
+            /deep/.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+                background: $--color-primary;
             }
         }
     }
