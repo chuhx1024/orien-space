@@ -11,7 +11,7 @@
                 我们将为您提供具有市场竞争力的薪酬、期权、六险一金，以及挑战性的工作任务与人性化的工作环境。
             </p>
         </banner-com-small>
-        <div class="jonin-content">
+        <div class="jonin-content" :class="{isMobile}">
             <el-collapse v-model="activeName" class="type-page" accordion @change="handleChange">
                 <el-collapse-item v-for="(item, index) in joinData" :key="index" :name="index">
                     <template slot="title">
@@ -160,6 +160,88 @@ export default {
             .content-sub-title {
                 color: $--color-primary;
                 padding: 25px 0 16px;
+            }
+        }
+
+        &.isMobile {
+            padding: 50px 15px;
+
+            /deep/.el-collapse {
+                background-color: #000;
+                color: #fff;
+                border: none;
+
+                .el-collapse-item__header {
+                    background-color: #000;
+                    color: #fff;
+                    height: 42px;
+                    line-height: 42px;
+                    border-bottom: 1px solid rgba(201, 202, 202, 0.39);
+
+                    .el-collapse-item__arrow {
+                        display: none;
+                    }
+                }
+
+                .el-collapse-item__wrap {
+                    border-bottom: 1px solid rgba(201, 202, 202, 0.39);
+                }
+
+                .el-collapse-item__content {
+                    background-color: #000;
+                    border: none;
+                    color: #fff;
+                }
+            }
+
+            .content-header {
+                width: 100%;
+
+                .header-left {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .arrow-text {
+                    font-size: 14px;
+                    color: #c9caca;
+                }
+
+                .arrow-icon-container {
+                    width: 32px;
+                    display: inline-block;
+
+                    .arrow-icon {
+                        color: #f49e17;
+                        width: 33px;
+                        transform: translateX(-2px);
+                        transition: transform 0.3s;
+
+                        &.isActive {
+                            color: $--color-primary;
+                            transform: scaleX(1.5) translateX(2px);
+                        }
+                    }
+                }
+            }
+
+            .content-wrap {
+                padding: 0 15px;
+
+                .constent-title {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 14px 0 5px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .content-sub-title {
+                    color: $--color-primary;
+                    padding: 12px 0 8px;
+                }
             }
         }
     }

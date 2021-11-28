@@ -102,6 +102,17 @@ export default {
                 &.isMobile {
                     padding-left: 20px;
                     padding-right: 20px;
+
+                    .small {
+                        font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 100;
+                        color: #fff;
+                    }
+
+                    .small:nth-child(1) {
+                        padding-top: 20px;
+                    }
                 }
             }
 

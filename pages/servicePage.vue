@@ -8,7 +8,7 @@
                 你准备好出发去太空了吗？
             </p> -->
         </banner-com-small>
-        <div id="serviceTitle" class="service-title" :class="{isMobile: isMobile}">
+        <div id="serviceTitle" class="service-title" :class="{isMobile}">
             <p class="desc">
                 太空物流
             </p>
@@ -26,8 +26,8 @@
             <img class="home-img" src="/img/service/service_0.jpg" alt="">
         </div>
         <div class="img-container" style="background-color: #040a17; padding: 148px 0;">
-            <img class="wallpaper left" src="/img/service/service_1.png" alt="">
-            <section class="text-wallpaper">
+            <img class="wallpaper left" :class="{isMobile}" src="/img/service/service_1.png" alt="">
+            <section class="text-wallpaper" :class="{isMobile}">
                 <section class="text-content type-page">
                     <div class="main-title-0">
                         使命必达
@@ -51,7 +51,7 @@
         </div>
         <div id="serviceCoop" class="img-container" style="background-color: #000; padding: 45px 0;">
             <img class="wallpaper right" src="/img/service/service_22.gif" alt="">
-            <section class="text-wallpaper">
+            <section class="text-wallpaper" :class="{isMobile}">
                 <section class="text-content type-page text-align-right">
                     <div class="main-title-0">
                         商业合作
@@ -72,7 +72,7 @@
         </div>
         <div id="serviceInvite" class="img-container">
             <img class="wallpaper" src="/img/service/service_33.jpg" alt="">
-            <section class="text-wallpaper">
+            <section class="text-wallpaper" :class="{isMobile}">
                 <section class="text-content type-page">
                     <div class="main-title">
                         想要近距离观看发射火箭吗?
@@ -168,6 +168,28 @@ export default {
                 font-weight: 300;
                 padding-bottom: 1.9rem;
             }
+
+            &.isMobile {
+                .desc {
+                    font-size: 24px;
+                    line-height: 26px;
+                    padding-bottom: 23px;
+                }
+
+                .mark {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    padding-bottom: 19px;
+                }
+
+                .mark-0 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    padding-bottom: 10px;
+                }
+            }
         }
 
         .img-content {
@@ -188,12 +210,19 @@ export default {
 
                 &.left {
                     width: 50%;
-                    transform: translateX(91%);
+                    transform: translateX(74%);
                 }
 
                 &.right {
                     width: 15%;
                     transform: translateX(100%);
+                }
+
+                &.isMobile {
+                    &.left {
+                        width: 50%;
+                        transform: translateX(91%);
+                    }
                 }
             }
 
@@ -265,6 +294,67 @@ export default {
 
                     .text-btn {
                         padding-top: 66px;
+                    }
+                }
+
+                &.isMobile {
+                    padding: 0 15px;
+
+                    .text-content {
+                        .main-title {
+                            font-size: 18px;
+                            color: #fff;
+                            margin-bottom: 30px;
+                        }
+
+                        .main-title-0 {
+                            font-size: 18px;
+                            color: #fff;
+                            margin-bottom: 16px;
+                        }
+
+                        .main-title-1 {
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 32px 0 16px;
+                        }
+
+                        .sub-title {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                            color: #c9caca;
+                        }
+
+                        .time-text {
+                            font-size: 26px;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+
+                        .text-desc {
+                            width: 150px;
+                            font-size: 14px;
+                            color: #c9caca;
+                            line-height: 18px;
+                        }
+
+                        .text-desc-2 {
+                            font-size: 16px;
+                            color: #c9caca;
+                            line-height: 24px;
+                        }
+
+                        .text-desc-3 {
+                            width: 150px;
+                            font-size: 12px;
+                            color: #c9caca;
+                            padding-top: 15px;
+                            line-height: 18px;
+                        }
+
+                        .text-btn {
+                            padding-top: 33px;
+                        }
                     }
                 }
 

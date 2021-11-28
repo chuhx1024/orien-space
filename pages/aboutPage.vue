@@ -581,6 +581,80 @@ export default {
                 }
             }
         }
+
+        &.isMobile {
+            padding: 0 15px;
+
+            .partners-title {
+                text-align: center;
+                font-size: 33px;
+                color: #fff;
+                line-height: 47px;
+                padding: 70px 0 67px;
+            }
+
+            .partners-content {
+                .partners-img {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .content-item {
+                        width: 30%;
+                        height: 38px;
+                        padding-top: 30px;
+                        text-align: center;
+
+                        &:nth-child(3n + 1) {
+                            text-align: left;
+                            width: 30%;
+                        }
+
+                        &:nth-child(3n + 3) {
+                            text-align: right;
+                            width: 30%;
+                        }
+
+                        &:last-child {
+                            text-align: center;
+                            width: 100%;
+                        }
+
+                        .img {
+                            height: 38px;
+                        }
+                    }
+                }
+
+                .partners-text {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .content-item {
+                        width: 14.3%;
+                        padding-top: 30px;
+                        font-size: 17px;
+                        color: #fff;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+
+                        &:nth-child(7n + 1) {
+                            text-align: left;
+                        }
+
+                        &:nth-child(7n + 7) {
+                            width: 14%;
+                        }
+
+                        img {
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .about-contact {
