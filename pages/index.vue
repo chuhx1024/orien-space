@@ -9,7 +9,7 @@
                 由经纬中国、红杉中国领投
             </p>
             <p class="big">
-                三一集团、天赋资本、三江资本、SEE Fund等知名基金跟投
+                三一集团、天府三江资本、SEE Fund等知名基金跟投
             </p>
         </banner-com>
         <light-beam />

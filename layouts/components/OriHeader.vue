@@ -34,7 +34,12 @@
                                             服务
                                         </nuxt-link>
                                     </el-menu-item>
-                                    <el-submenu index="/productPage">
+                                    <el-menu-item v-if="isMobile" index="/productPage">
+                                        <nuxt-link class="nav-item" to="/productPage">
+                                            产品
+                                        </nuxt-link>
+                                    </el-menu-item>
+                                    <el-submenu v-else index="/productPage">
                                         <template slot="title">
                                             <nuxt-link class="nav-item" to="/productPage">
                                                 产品

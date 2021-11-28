@@ -71,7 +71,7 @@ export default {
 
         &.isMobile {
             font-size: 12px;
-            padding: 10px 15px;
+            // padding: 10px 15px;
 
             .contentText {
                 padding: 5px 0;
