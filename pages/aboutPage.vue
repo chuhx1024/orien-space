@@ -387,7 +387,13 @@ export default {
 
             .market-content {
                 .left-content-text {
+                    padding: 0 15px;
+                    position: absolute;
+                    top: 50%;
+
                     .text-group {
+                        padding-bottom: 10px;
+
                         .text-title {
                             font-size: 18px;
                         }
