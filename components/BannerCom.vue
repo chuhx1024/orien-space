@@ -10,7 +10,7 @@
             </div>
             <div v-if="bannerBtn" class="banner-btn">
                 <a href="https://mp.weixin.qq.com/s/qc-Q7O8gfTly1WK57cIz4A" target="_blank">
-                    <el-button type="primary">
+                    <el-button :size="isMobile? 'mini': 'medium'" type="primary">
                         {{ bannerBtn }}
                     </el-button>
                 </a>

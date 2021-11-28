@@ -42,7 +42,7 @@
                         通过陆地、海洋等多种方式灵活发射可实现海上自主回收
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约发射
                         </el-button>
                     </div>
@@ -63,7 +63,7 @@
                         尊敬的企业及个人客户：我们的发射服务可提供整体/分部品牌广告合作及其他营销服务，请您联系我们洽谈具体方案。
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             联系我们
                         </el-button>
                     </div>
@@ -84,7 +84,7 @@
                         2023年6月31日
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约观看
                         </el-button>
                     </div>

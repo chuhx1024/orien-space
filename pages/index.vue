@@ -51,7 +51,7 @@
                         <p>创新的大型捆绑设计，兼具稳定的性能与极强运载能力，针对多种发射场景海陆兼容的设计，持续提升服务能力，使引力1号成为商业发射的极佳选择</p>
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="goToHash('productPage', 'numberFirst')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="goToHash('productPage', 'numberFirst')">
                             了解更多
                         </el-button>
                     </div>
@@ -87,7 +87,7 @@
                         <p>实现将固体大推力助推器与液体芯级相结合设计，使引力2号满足更高轨道发射需求，实现部分回收，重复使用。</p>
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="goToHash('productPage', 'numberSecond')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="goToHash('productPage', 'numberSecond')">
                             了解更多
                         </el-button>
                     </div>
@@ -122,14 +122,14 @@
                         <p>在实现极大运载能力的同时，引力3号可支持海上回收</p>
                     </div>
                     <div class="text-btn">
-                        <el-button type="primary" plain @click="goToHash('productPage', 'numberThird')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="goToHash('productPage', 'numberThird')">
                             了解更多
                         </el-button>
                     </div>
                 </section>
             </section>
         </div>
-        <div class="carouser-content">
+        <div class="carouser-content" :class="{isMobile}">
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
@@ -274,7 +274,7 @@ export default {
                 }
 
                 .text-desc {
-                    font-size: 12px;
+                    font-size: 10px;
                     color: #c9caca;
                     line-height: 17px;
 
@@ -312,6 +312,20 @@ export default {
             line-height: 3.2rem;
             padding-bottom: 3.8rem;
         }
+
+        &.isMobile {
+            .desc {
+                font-size: 15px;
+                line-height: 30px;
+                padding-bottom: 10px;
+            }
+
+            .mark {
+                font-size: 12px;
+                line-height: 18px;
+                padding-bottom: 19px;
+            }
+        }
     }
 
     .carouser-content {
@@ -343,6 +357,12 @@ export default {
             align-items: center;
             color: #fff;
             font-size: 3rem;
+        }
+
+        &.isMobile {
+            .carousel-title {
+                font-size: 24px;
+            }
         }
     }
 

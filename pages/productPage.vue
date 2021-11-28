@@ -105,10 +105,10 @@
                         <span class="fr" v-html="spItem.num" />
                     </p>
                     <div class="power-btn">
-                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约发射
                         </el-button>
-                        <el-button type="primary" plain @click="gotoMail('bd@orienspace.com')">
+                        <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">
                             预约观看
                         </el-button>
                     </div>
