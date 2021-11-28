@@ -379,8 +379,10 @@ export default {
             padding-bottom: 1px;
 
             .market-title {
-                font-size: 33px;
-                padding: 70px 0 50px;
+                font-size: 4.7rem;
+                font-weight: bold;
+                line-height: 4.7rem;
+                padding: 35px 0 30px;
             }
 
             .market-content {
@@ -488,6 +490,13 @@ export default {
 
         &.isMobile {
             padding: 0 15px 70px;
+
+            .time-line-title {
+                font-size: 4.7rem;
+                font-weight: bold;
+                line-height: 4.7rem;
+                padding: 35px 0 30px;
+            }
 
             .timeline-item {
                 padding: 50px 0 0 70px;
@@ -633,11 +642,10 @@ export default {
             padding: 0 15px;
 
             .partners-title {
-                text-align: center;
-                font-size: 33px;
-                color: #fff;
-                line-height: 47px;
-                padding: 70px 0 67px;
+                font-size: 4.7rem;
+                font-weight: bold;
+                line-height: 4.7rem;
+                padding: 35px 0 30px;
             }
 
             .partners-content {
@@ -756,6 +764,33 @@ export default {
         &.isMobile {
             padding-left: 15px;
             padding-right: 15px;
+
+            .contact-title {
+                font-size: 4.7rem;
+                font-weight: bold;
+                line-height: 4.7rem;
+                padding: 35px 0 30px;
+            }
+
+            .contact-content {
+                .right-content {
+                    .content-img {
+                        width: 100%;
+                    }
+                }
+
+                .left-content {
+                    display: flex;
+                    align-items: center;
+
+                    .contact-group {
+                        .contact-group-item {
+                            font-size: 17px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
 
             .left-content {
                 padding-bottom: 40px;
