@@ -9,7 +9,7 @@
             </p>
         </banner-com>
         <light-beam />
-        <div class="product-desc type-page">
+        <div class="product-desc type-page" :class="{isMobile}">
             <p class="product-desc-first">
                 东方空间通过“引力”系列运载火箭的研发，打造一次性使用、可回收重复使用和载人飞行等系列化、多样化的空天运输产品，快速形成低成本、规模化、高效快捷的发射服务能力，覆盖LEO、SSO、GTO、GEO等各类轨道。
             </p>
@@ -17,7 +17,7 @@
                 将在短期内达到一流的航天发射水平，中期实现载人飞行商业化，长期规划实现近地行星探索商业化。
             </p>
         </div>
-        <el-row class="product-icon type-page">
+        <el-row class="product-icon type-page" :class="{isMobile}">
             <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
                 <div>
                     <svg class="icon" aria-hidden="true">
@@ -201,6 +201,11 @@ export default {
         .product-desc-second {
             padding-top: 20px;
         }
+
+        &.isMobile {
+            font-size: 12px;
+            color: #c9caca;
+        }
     }
 
     .product-icon {
@@ -225,6 +230,10 @@ export default {
             color: #c9caca;
             line-height: 20px;
             padding-bottom: 20px;
+        }
+
+        &.isMobile {
+            padding: 30px 15px 60px;
         }
     }
 
@@ -282,6 +291,22 @@ export default {
 
             .right-content-img {
                 height: 650px;
+            }
+        }
+
+        &.isMobile {
+            padding: 10px 15px;
+
+            .left-content {
+                .power-desc {
+                    font-size: 12px;
+                    color: #c9caca;
+                    line-height: 18px;
+                }
+
+                .power-btn {
+                    padding-top: 50px;
+                }
             }
         }
     }

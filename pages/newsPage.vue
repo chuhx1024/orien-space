@@ -1,9 +1,9 @@
 
 <template>
-    <section class="newsPage-container" :class="{isMobile: isMobile}">
+    <section class="newsPage-container" :class="{isMobile}">
         <banner-com-small
             url-source="/img/news/news_banner.jpg"
-            main-title="新闻"
+            main-title="新闻动态"
         />
         <section class="news-content">
             <header class="news-nav type-page">
@@ -186,6 +186,24 @@ export default {
     &.isMobile {
         .news-content {
             padding: 0 15px;
+        }
+
+        .news-group {
+            .grid-content {
+                .content-text {
+                    .time {
+                        color: #979b9b;
+                        font-size: 12px;
+                        padding-bottom: 10px;
+                    }
+
+                    .desc {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            padding-bottom: 210px;
         }
     }
 }

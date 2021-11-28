@@ -91,7 +91,7 @@
                 </section>
             </section>
         </div>
-        <div id="serviceTravel" class="carouser-content">
+        <div id="serviceTravel" class="carouser-content" :class="{isMobile}">
             <carousel
                 key="dfasdfasdf"
                 :nav="false"
@@ -171,7 +171,8 @@ export default {
 
             &.isMobile {
                 .desc {
-                    font-size: 24px;
+                    font-size: 4.7rem;
+                    font-weight: bold;
                     line-height: 26px;
                     padding-bottom: 23px;
                 }
@@ -184,7 +185,8 @@ export default {
                 }
 
                 .mark-0 {
-                    font-size: 14px;
+                    font-size: 10px;
+                    color: #c9caca;
                     line-height: 20px;
                     font-weight: 300;
                     padding-bottom: 10px;
@@ -302,38 +304,38 @@ export default {
 
                     .text-content {
                         .main-title {
-                            font-size: 18px;
+                            font-size: 14px;
                             color: #fff;
                             margin-bottom: 30px;
                         }
 
                         .main-title-0 {
-                            font-size: 18px;
+                            font-size: 14px;
                             color: #fff;
                             margin-bottom: 16px;
                         }
 
                         .main-title-1 {
-                            font-size: 16px;
+                            font-size: 14px;
                             color: #fff;
                             padding: 32px 0 16px;
                         }
 
                         .sub-title {
-                            font-size: 16px;
+                            font-size: 10px;
                             margin-bottom: 15px;
                             color: #c9caca;
                         }
 
                         .time-text {
-                            font-size: 26px;
+                            font-size: 14px;
                             font-weight: 700;
                             color: #fff;
                         }
 
                         .text-desc {
                             width: 150px;
-                            font-size: 14px;
+                            font-size: 10px;
                             color: #c9caca;
                             line-height: 18px;
                         }
@@ -398,6 +400,12 @@ export default {
                 align-items: center;
                 color: #fff;
                 font-size: 3rem;
+            }
+
+            &.isMobile {
+                .carousel-title {
+                    font-size: 15px;
+                }
             }
         }
     }

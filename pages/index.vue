@@ -361,7 +361,7 @@ export default {
 
         &.isMobile {
             .carousel-title {
-                font-size: 24px;
+                font-size: 15px;
             }
         }
     }
