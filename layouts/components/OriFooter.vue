@@ -128,6 +128,10 @@
                 </el-col>
             </el-row>
         </div>
+        <p class="Ori-copy-right" :class="{isMobile: isMobile}">
+            <a style="color: rgba(255, 255, 255, 0.6);" class="icp" rel="nofollow" href="http://beian.miit.gov.cn" target="_blank">版权所有 © 2021 东方空间  京 ICP 备 xxxxxxx 号</a>
+            <a style="color: rgba(255, 255, 255, 0.6);" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=4403050122005665" target="_blank"> | 京公网安备 xxxxxxxxx 号</a>
+        </p>
     </div>
 </template>
 <script>
@@ -295,6 +299,21 @@ export default {
             .in-icon-svg {
                 top: -27px !important;
             }
+        }
+    }
+
+    .Ori-copy-right {
+        background-color: #1d2023;
+        padding: 12px 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        line-height: 12px;
+
+        &.isMobile {
+            line-height: 22px;
+            text-align: left;
         }
     }
 }

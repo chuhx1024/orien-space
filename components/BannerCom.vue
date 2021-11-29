@@ -5,7 +5,7 @@
             <h2 v-if="mainTitle" class="main-title" :class="{isMobile: isMobile}">
                 {{ mainTitle }}
             </h2>
-            <div class="banner-desc">
+            <div class="banner-desc" :class="{isMobile: isMobile}">
                 <slot />
             </div>
             <div v-if="bannerBtn" class="banner-btn">
@@ -99,6 +99,15 @@ export default {
 
                 .big:nth-child(1) {
                     padding-top: 4rem;
+                }
+
+                &.isMobile {
+                    .big {
+                        font-size: 3rem;
+                        font-weight: 400;
+                        color: #9fa7b4;
+                        padding-top: 1.5rem;
+                    }
                 }
             }
 

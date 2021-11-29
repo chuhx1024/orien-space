@@ -140,13 +140,13 @@
                         </div>
                     </div>
                     <div class="partners-text type-page">
-                        <div class="content-item-img">
-                            <img class="img" src="/img/about/partners_9.jpeg" alt="">
-                            <img class="img" src="/img/about/partners_100.jpeg" alt="">
-                        </div>
-                        <div v-for="item in partnersTextMobile" :key="item" class="content-item">
+                        <div v-for="item in partnersText" :key="item" class="content-item">
                             <img v-if="item.indexOf('partners') !== -1" :src="`/img/about/${item}`" alt="">
                             <span v-else>{{ item }}</span>
+                        </div>
+                        <div class="content-item-img">
+                            <img class="img" src="/img/about/partners_9.jpeg" alt="">
+                            <!-- <img class="img" src="/img/about/partners_100.jpeg" alt=""> -->
                         </div>
                     </div>
                 </carousel>
@@ -268,14 +268,6 @@ export default {
                 'partners_8.jpeg',
             ],
             partnersText: [
-                '赛博朋克奇点',
-                '蓝色空间',
-                '天府三江资本',
-                '王国斌',
-                '张学政',
-                '国丰集团',
-            ],
-            partnersTextMobile: [
                 '赛博朋克奇点',
                 '蓝色空间',
                 '天府三江资本',
@@ -701,6 +693,7 @@ export default {
                     flex-wrap: wrap;
 
                     .content-item-img {
+                        padding-top: 30px;
                         width: 100%;
                         display: flex;
                         align-items: center;
