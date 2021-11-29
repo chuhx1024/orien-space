@@ -386,11 +386,13 @@ export default {
                         padding-bottom: 10px;
 
                         .text-title {
-                            font-size: 18px;
+                            font-size: 4.7rem;
                         }
 
                         .text-desc {
-                            font-size: 13px;
+                            font-size: 12px;
+                            color: #c9caca;
+                            line-height: 20px;
                         }
                     }
                 }
@@ -487,6 +489,16 @@ export default {
 
         &.isMobile {
             padding: 0 15px 70px;
+
+            /deep/.el-tabs__item {
+                font-size: 4.7rem;
+                font-weight: 700;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
 
             .time-line-title {
                 font-size: 4.7rem;
