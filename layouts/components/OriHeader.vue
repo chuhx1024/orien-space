@@ -253,7 +253,11 @@ export default {
             // 滚动条滚动时，距离顶部的距离
             const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
             if (scrollTop === 0) {
-                this.$refs.header.style.backgroundColor = 'transparent'
+                if (this.isMobile) {
+                    this.$refs.header.style.backgroundColor = 'transparent'
+                } else {
+                    this.$refs.header.style.backgroundColor = '#000'
+                }
             } else {
                 this.$refs.header.style.backgroundColor = '#000'
             }
@@ -263,7 +267,7 @@ export default {
 </script>
 <style lang='scss' scoped>
 .clu-header {
-    transition: 3s background-color;
+    transition: 0.1s background-color;
 
     /deep/.el-menu.el-menu--horizontal {
         border-bottom: none;
@@ -341,7 +345,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.11);
     width: 100%;
     height: 66px;
@@ -389,6 +393,9 @@ export default {
     }
 
     &.isMobile {
+        transition: 3s background-color;
+        background-color: transparent;
+
         /deep/.el-menu {
             max-height: calc(100vh - 66px);
             overflow: auto;
