@@ -102,9 +102,12 @@ export default {
                 }
 
                 &.isMobile {
+                    padding: 0 15px;
+
                     .big {
                         font-size: 3rem;
                         font-weight: 400;
+                        line-height: 4rem;
                         color: #9fa7b4;
                         padding-top: 1.5rem;
                     }
@@ -120,6 +123,12 @@ export default {
                     width: 100%;
                     font-size: 1.5rem;
                 }
+            }
+        }
+
+        &.isMobile {
+            .banner-wallpaper {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
             }
         }
     }

@@ -4,7 +4,7 @@
             url-source="/img/product/banner_0.jpg"
             main-title="产品"
         >
-            <p class="big" style="color: #fff;">
+            <p class="big">
                 &quot;引力&quot;系列运载火箭
             </p>
         </banner-com>
