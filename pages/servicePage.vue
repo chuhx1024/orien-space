@@ -170,6 +170,8 @@ export default {
             }
 
             &.isMobile {
+                padding-bottom: 10px;
+
                 .desc {
                     font-size: 4.7rem;
                     font-weight: bold;
@@ -189,7 +191,7 @@ export default {
                     color: #c9caca;
                     line-height: 20px;
                     font-weight: 300;
-                    padding-bottom: 10px;
+                    padding-bottom: 5px;
                 }
             }
         }
@@ -348,7 +350,7 @@ export default {
 
                         .text-desc-3 {
                             width: 150px;
-                            font-size: 12px;
+                            font-size: 10px;
                             color: #c9caca;
                             padding-top: 15px;
                             line-height: 18px;
