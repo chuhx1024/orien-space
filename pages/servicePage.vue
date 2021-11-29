@@ -2,7 +2,7 @@
     <section class="service-page-container">
         <banner-com-small
             url-source="/img/service/service_banner.jpg"
-            main-title="你准备好出发去太空了吗？"
+            main-title="您准备好出发去太空了吗？"
         >
             <!-- <p class="big" style="color: #fff;">
                 你准备好出发去太空了吗？
@@ -57,7 +57,7 @@
                         商业合作
                     </div>
                     <div class="text-desc-2">
-                        你想与我们一起迈向太空吗？
+                        您想与我们一起迈向太空吗？
                     </div>
                     <div class="text-desc-3">
                         尊敬的企业及个人客户：我们的发射服务可提供整体/分部品牌广告合作及其他营销服务，请您联系我们洽谈具体方案。
@@ -81,7 +81,7 @@
                         引力-1号 发射倒计时
                     </div>
                     <div class="time-text">
-                        2023年6月31日
+                        2023年
                     </div>
                     <div class="text-btn">
                         <el-button :size="isMobile? 'mini': 'medium'" type="primary" plain @click="gotoMail('bd@orienspace.com')">

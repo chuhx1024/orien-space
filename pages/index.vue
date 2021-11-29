@@ -2,14 +2,14 @@
     <section class="home-page-container">
         <banner-com
             url-source="/img/index/index_0.jpg"
-            main-title="完成 4 亿天使轮融资"
+            main-title="东方空间完成 4 亿元天使轮系列融资"
             banner-btn="了解更多"
         >
             <p class="big">
-                由经纬中国、红杉中国领投
+                由红杉中国、经纬中国领投
             </p>
             <p class="big">
-                三一集团、天府三江资本、SEE Fund等知名基金跟投
+                三一集团、闻泰科技创始人张学政、SEE Fund、图灵创投等知名机构、企业家跟投
             </p>
         </banner-com>
         <light-beam />

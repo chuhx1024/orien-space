@@ -168,7 +168,7 @@ export default {
                         { disc: '整流罩直径', num: '4.2 <span style="color: #c9caca;">米</span> / 5', unit: '米' },
                         { disc: '起飞重量', num: 1100, unit: '吨' },
                         { disc: '起飞推力', num: 1450, unit: '吨' },
-                        { disc: '运载能力-近地轨道', num: 15, unit: '吨' },
+                        { disc: '运载能力-近地轨道', num: 30, unit: '吨' },
                         { disc: '运载能力-太阳同步轨道', num: 15, unit: '吨' },
                         { disc: '运载能力-地球同步转移轨道', num: 7, unit: '吨' },
                     ],
