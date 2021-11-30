@@ -500,6 +500,10 @@ export default {
                 }
             }
 
+            /deep/.el-tabs__item.is-active {
+                color: $--color-primary;
+            }
+
             .time-line-title {
                 font-size: 4.7rem;
                 font-weight: bold;
