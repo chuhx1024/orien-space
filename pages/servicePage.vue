@@ -343,9 +343,9 @@ export default {
                         }
 
                         .text-desc-2 {
-                            font-size: 16px;
+                            font-size: 10px;
                             color: #c9caca;
-                            line-height: 24px;
+                            line-height: 15px;
                         }
 
                         .text-desc-3 {
