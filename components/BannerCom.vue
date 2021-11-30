@@ -115,14 +115,14 @@ export default {
             }
 
             .banner-btn {
-                width: 13rem;
-                min-width: 100px;
+                // width: 13rem;
+                // min-width: 100px;
                 margin-top: 8.9rem;
 
-                /deep/.el-button {
-                    width: 100%;
-                    font-size: 1.5rem;
-                }
+                // /deep/.el-button {
+                //     width: 100%;
+                //     font-size: 1.5rem;
+                // }
             }
         }
 

@@ -9,7 +9,10 @@
                 由红杉中国、经纬中国领投
             </p>
             <p class="big">
-                三一集团、闻泰科技创始人张学政、SEE Fund、图灵创投等知名机构、企业家跟投
+                三一集团、闻泰科技创始人张学政、SEE Fund、图灵创投
+            </p>
+            <p class="big">
+                等知名机构、企业家跟投
             </p>
         </banner-com>
         <light-beam />
