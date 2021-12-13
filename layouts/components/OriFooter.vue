@@ -130,7 +130,7 @@
         </div>
         <p class="Ori-copy-right" :class="{isMobile: isMobile}">
             <a style="color: rgba(255, 255, 255, 0.6);" class="icp" rel="nofollow" href="http://beian.miit.gov.cn" target="_blank">版权所有 © 东方空间  鲁 ICP 备 2021043021 号</a>
-            <!-- <a style="color: rgba(255, 255, 255, 0.6);" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=4403050122005665" target="_blank"> | 京公网安备 xxxxxxxxx 号</a> -->
+            <a style="color: rgba(255, 255, 255, 0.6);" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37068702000096" target="_blank"> | <img src="/img/copy_right.png"> 鲁公网安备 37068702000096号</a>
         </p>
     </div>
 </template>
