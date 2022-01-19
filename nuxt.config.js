@@ -14,6 +14,14 @@ export default {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ],
+        script: [
+            {
+                type: 'text/javascript',
+                // src: '//100859.kefu.easemob.com/webim/easemob.js?configId=73273a76-cec6-4b6e-9a1f-187af9035e25',
+                src: '//100859.kefu.easemob.com/webim/easemob.js?configId=73273a76-cec6-4b6e-9a1f-187af9035e25',
+                body: true,
+            },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
